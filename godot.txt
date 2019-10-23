@@ -1,0 +1,15 @@
+
+
+PhysicsBodys 
+    Bodys2D 
+    - StaticBody - Objeto que é solido, mas não move.
+    - KinematicBody - Colide com outros objetos fisicos, mas a fisica do jogo nao faz ele mover. Pra quando se quer fazer a movimentação na mão. Um bom exemplo seria o player.
+    - RigidBody - Objeto que usa a fisica normalmente.
+
+    Collisions
+        Precisa adicionar um objeto de collision nos bodys para acontecer as collisioes.
+
+    
+Scriptable Objects
+          
+

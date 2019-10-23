@@ -1,6 +1,24 @@
-Containers - 
+Big O Notation --- Forma de calcular, de forma abstrata ou não 'precisa', a complexidade de uma função. Normalmente usada usando como 
+medida tempo de execução ou memoria usada. 
+Exemplo:
+    Se uma função recebe N como parametro, e a quantidade de operações aumenta conforme N aumenta, essa função tem a complexidade na casa
+de O(n). Se é independente de N, O(1). 
 
-Docker - Conjunto de tecnologias para gerenciamento de containers
+Pontos importantes:
+    Funções aritimeticas são constantes, acessar uma 'casa' de uma array ou propriedade de um objeto também.
+    Sempre simplificamos, não importa os termos menores. Por exemplo, se a complexidade de uma funcao é O(10n), chamamos de O(n), pois
+o 10 é irrelevante quando n tende ao infinito.
 
-PaaS(Plataform as a service) - Plataforma que presta o serviço de gerenciar uma aplicação. Exemplo: Cliente envia uma aplicação, a empresa 
+Referencias: 
+- https://www.youtube.com/watch?v=kS_gr2_-ws8
+
+    
+
+Containers --- 
+
+Docker --- Conjunto de tecnologias para gerenciamento de containers
+
+Hash Table --- 
+
+PaaS(Plataform as a service) --- Plataforma que presta o serviço de gerenciar uma aplicação. Exemplo: Cliente envia uma aplicação, a empresa 
 cuida de tudo para a aplicação funcionar.  
