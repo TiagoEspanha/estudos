@@ -1,0 +1,23 @@
+rtt - tempo de viagem de ida e volta da conexão -  isto é, o tempo decorrido entre o envio de um segmento e
+seu reconhecimento.
+
+ SampleRTT no exemplo, é o tempo transcorrido entre o momento em que o
+segmento é enviado (isto é, passado ao IP) e o momento em que é recebido um reconhecimento para ele
+
+ O TCP mantém uma média, denominada EstimatedRTT, dos valores de
+SampleRTT. Ao obter um novo SampleRTT, o TCP atualiza EstimatedRTT de acordo com a seguinte fórmula:
+EstimatedRTT = (1 – ) • EstimatedRTT + • SampleRTT
+
+Essa fórmula está escrita na forma de um comando de linguagem de programação — o novo valor de
+EstimatedRTT é uma combinação ponderada entre o valor anterior de EstimatedRTT e o novo valor para
+SampleRTT. O valor recomendado de é 0,125 (isto é, 1/8) [RFC 6298], caso em que essa fórmula se torna:
+EstimatedRTT = 0,875 • EstimatedRTT + 0,125 • SampleRTT
+
+Além de ter uma estimativa do RTT, também é valioso ter uma medida de sua variabilidade. O [RFC 6298]
+define a variação do RTT, DevRTT, como uma estimativa do desvio típico entre SampleRTT e EstimatedRTT:
+DevRTT = (1 – b) • DevRTT + b • |SampleRTT – EstimatedRTT|
+Note que DevRTT é uma MMEP da diferença entre SampleRTT e EstimatedRTT. Se os valores de
+SampleRTT apresentarem pouca variação, então DevRTT será pequeno; por outro lado, se houver muita variação, 
+DevRTT será grande. O valor recomendado para é 0,25.
+
+Uremet = (L/R) / (RTT + L/R)

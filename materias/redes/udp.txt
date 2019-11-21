@@ -1,0 +1,15 @@
+UDP - User datagram protocol
+
+Usado quando a aplicação não precisa de garantia de entrega. Pode ser pq a aplicação lida com retransmissao de um jeito proprio ou porque 
+simplesmente não precisa.
+
+Basicamente serve pra encapsular a informação no datagrama e identificar a aplicação. Dps envia para a camada de rede (network)
+
+Tem apenas 4 informaçoes no header
+    - Source port 
+    - Destination port 
+    - Length
+    - Checksum - Opcional usando ipv4 - DETALHE - inclui uma parte do header do ip
+
+Não estabelece conexao 
+Os pacotes não tem ordem garantida

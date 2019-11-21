@@ -1,0 +1,35 @@
+TCP 
+- Transmission control protocol
+- Tcp é um exemplo da camada de transporte
+
+Porque tão usado?
+- Confiável, end-to-end, bi-direcional
+
+Comecando a conexao
+    - Para começar uma conexão tcp, primeiro se troca as msgs conhecidas cm "3-ways handshakes". Host A 
+manda a msg SYN, que sinaliza que quer comecar uma conexao. O Host B responde com outro SYN (mostrando que ele tb quer comecar uma conexar 
+com o HOST A) e com ACK, que quer dizer que aceitou a conexão. Então o Host A responde com um ACK, aceitando a conexao pedida pelo HOST B.
+
+Finalizando a conexao
+    - Host A manda request com FIN, para sinalizar que quer fechar sua conexao. Host B responde com ACK, para reconhecer que quer finalizar tb.
+Porém, o HOST B talvez ainda tenha dados para enviar para o HOST A, se esse for o caso, continua enviando esses dados. Quando finalizar, ele
+envia o request com FIN. Quando o HOST A responder com ACK, a conexao finaliza.
+
+Serviços oferecidos
+
+    - Entrega de dados confiavel - 
+    - Dados em sequencia 
+    - Controle de 'engarrafamento' de trafico 
+
+O segmento de data do TCP
+    HEADER
+    - Destination port              - Porta de destino
+    - Source port                   - Porta que o hospedeiro vai abrir para o destino enviar mensagem de volta 
+    - Sequence #(of the first byte) - Número do primeiro byte enviado
+    - Acknowledment sequence #      - Número do ultimo byte recebido, indica q esse e todos os bytes anteriores a ele foram recebidos
+    - Checksum                      -   
+
+
+
+
+

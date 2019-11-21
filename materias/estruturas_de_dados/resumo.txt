@@ -1,0 +1,56 @@
+Data structures
+
+	DS(Data structure) - It is a way to organize information/data so it can be used effectively. 
+	Why should we use it? It is like ingredients to create powerful algorithms, organize data and cleaner code and make easier to understand.
+
+	ADT(Abstract data type) - Its the abstraction of a data structure, the interface of it. It doesnt show how to implement the DS, 
+	but it shows what the DS needs to do.
+
+	Examples:
+
+	ADT ----- DS
+	
+	List ---- Dynamic array
+
+Computation complexity analysis 
+
+	How much TIME the algorithm needs to be done?
+	How much SPACE the algorithm needs to be done?
+	
+	Big O notation
+	
+	We should considerer only the element with biggest greatness. Ex: 33n² + 2n + 3 :. f(O) = n².
+	When we have a loop inside another loop, we should multiply the big o from the different levels and add up of the same level
+
+Types of data strcture
+
+	Static and dinamic arrays
+	- Arrays are used so much because they are the fundamentals of the others data structures
+
+	STATIC ARRAY
+
+		- They are a array with fixed size, with elements been indexable, which means that each slot can be referenced with a number.
+		- They are sequencial in the memory.
+
+		When and where is a static array used?
+
+		- Storing sequencial data
+		- temporarily storing objects
+		- Used by IO routines as buffers
+		- Lookup tables and inverse lookup tables
+		- Can be used to return multiple values from functions
+		- Used in dynamic progamming to cache answers to subproblems
+
+
+		Complexity
+
+			Access		- O(1) - Because it is indexed
+			Search		- O(n) - On the worst case, need to go through all the array 
+			Inserction	- not
+			Appending	- not
+			Deletion	- not
+
+	DINAMIC ARRAY
+
+		- They are a array with dinamic size, can grow ou shrink. 
+
