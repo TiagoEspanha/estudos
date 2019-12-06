@@ -1,0 +1,12 @@
+- with - contexto
+
+- kwargs and args - (superficial) Args = arguments, kwargs = KEY WORD arguments. Na prática, após os argumentos 'padrões' da funcao,
+quando passamos *args e **kwargs, args vai pegar todos os parametros não nomeados, juntar e transformar numa TUPLA, enquanto kwargs vai pegar
+os parametros nomeados (ex: size=3) juntar e transformar num dicionário
+
+- starred expression
+
+- staticmethod e classmethod
+
+- subscriptable -(superficial) Uma classe subscriptable é uma classe que implementa os metodos __getitem__ e __setitem__, possibilitando
+assim usar o "syntax sugar" [].

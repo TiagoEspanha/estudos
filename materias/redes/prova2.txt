@@ -1,0 +1,52 @@
+Lista 5
+1 - Qual a diferença fundamental entre o roteador e um comutador da camada de enlace?
+	
+	- Os dois tem como funcao encaminhar pacotes, porém o comutador usa o endereço MAC e o roteador o IP e o roteador tem algumas funcoes a mais na camada de aplicacao, como segurança.
+
+3 - Descreva como pode ocorrer perda de pacotes em portas de entrada (sem usar buffers infinitos). Descreva como pode ocorrer perda de pacotes em portas de saída.  
+
+	- Se a taxa de pacotes for muito maior q a taxa de entrada, eventualmente o buffer(fila) de entrada vai chegar ao seu limite, e assim vai comecar a perder pacotes.
+
+4 - Suponha que o hospedeiro A envie ao hospedeiro B um segmento TCP encapsulado em um datagrama IP. Quando o hospedeiro B receber o datagrama, como sua camada de rede sabe que deve passar o segmento (isto é, a carga útil do datagrama) para TCP e não para UDP ou qualquer outra coisa?
+
+	- O datagrama ip tem a informaçao sobre qual protocolo deve ser utilizado na camada de transporte. O campo de protocolo de 8 bits
+
+5 - Compare os campos de cabeçalho do IPv4 e do IPv6. Quais as principais diferenças? Eles têm algum campo em comum?
+	
+	- O IPv6 tem tamanho fixo e não contem a maioria dos campos que o IPv4 tem. Contém o IP de origem e destino. Cabeçalhos semalhantes: Comprimento (IPv6:comprimento da carga útil, IPv4:comprimento do datagrama), proximo passo(IPv6:próximo cabeçalho, IPv4:protocolo da camada
+superior) e duraçao(IPv6:limite de saltos, IPv4:tempo de vida) 
+
+6 - Suponha que você compre um roteador sem fio e o conecte a seu modem a cabo. Suponha também que seu ISP designe dinamicamente um endereço IP a seu dispositivo conectado (isto é, seu roteador sem fio). Suponha ainda que você tenha cinco PCs em casa e que usa 802.11 para conectá-los sem fio ao roteador. Como são designados os endereços IP aos cinco PCs? O roteador sem fio usa NAT? Por quê?
+
+	- O DHCP designa esses ips. Sim, pois utiliza apensar o endereço dado pelo provedor
+
+
+ACHAR NUMERO DA INTERFACE = 32 - LOG² quantidade de interfaces ex: 50 interfaces = log²(50) = 6 pq 2 elevado a 6 = 64 e é o mais proximo de 50.
+
+Lista 6
+
+2 - Compare os anúncios utilizados por RIP e OSPF e aponte suas diferenças
+
+	- OSPF envia o anuncio para todos os outros roteadores, RIP envia somente para os vizinhos
+
+
+4 - Defina e aponte as diferenças entre os seguintes termos: sub-rede, prefixo e rota BGP.
+
+	- 	Sub-rede: Faz parte de uma rede maior, nao possui um roteador. É definida o pela interface do rodeador de borda(gateway?) e do host.
+		Prefixo: Parte da rede de um endereco ip. Abrange uma ou mais subredes. IP. Está descrito na forma a.b.c.d / x.
+		Rota BGP:  Em um sessao BGP, quando o roteador anuncia algo, ele adiciona seus atributos. Isso e uma rota BGP
+
+5 - Como o BGP usa o atributo NEXT-HOP? Como ele usa o atributo AS-PATH?
+
+6 -
+Inundação não controlada 	 - Um no pode receber varias copias do msm pacote e pode repassar várias cópias de um pacote pelo mesmo enlace de saída.
+
+Inundação controlada		 - Um no pode receber varias copias do msm pacote mas NÃO pode repassar várias cópias de um pacote pelo mesmo enlace de saída.
+
+Spanning-tree 				 - Um no NÃO pode receber varias copias do msm pacote e NÃO pode repassar várias cópias de um pacote pelo mesmo enlace de saída.
+
+7-
+
+
+
+

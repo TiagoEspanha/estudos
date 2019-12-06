@@ -1,4 +1,6 @@
 """
+    Caracteristicas
+    
     -Tamanho fixo
     -Memoria sequencial 
 """
@@ -13,6 +15,15 @@ class StaticArray:
         self.items = []
         self.last_index = 0
         self.allocate_memory(args)
+
+    #subscriptable
+    def __getitem__(self, index):
+        return self.items[index]
+
+    #subscriptable
+    def __setitem__(self, index, newItem):
+        self.items[index] = newItem
+
 
     def allocate_memory(self, args): #fake por enquanto
         for x in range(self.size):
@@ -32,6 +43,12 @@ class StaticArray:
             return self.items[index]
         except:
             raise Exception
+        
+    def set(self, index, value):
+        try:
+            self.items[index] = value
+        except:
+            raise Exception
 
     def search(self, item):
         for index, x in enumerate(self.items):
@@ -40,21 +57,6 @@ class StaticArray:
         
         return -1
 
-    def insert(self, item, index):
-        pass
-
-    def append(self, item):
-        if self.last_index != -1:
-            self.items[self.last_index] = item
-            self.increments_last_index()
-        else:
-            raise Exception
-
-    def delete(self, index):
-        try:
-            self.items[index] = None
-        except:
-            raise Exception
 
 
 
