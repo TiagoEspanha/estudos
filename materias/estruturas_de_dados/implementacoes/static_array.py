@@ -14,7 +14,7 @@ class StaticArray:
         self.size = size
         self.items = []
         self.last_index = 0
-        self.allocate_memory(args)
+        self._allocate_memory(args)
 
     #subscriptable
     def __getitem__(self, index):
@@ -25,7 +25,7 @@ class StaticArray:
         self.items[index] = newItem
 
 
-    def allocate_memory(self, args): #fake por enquanto
+    def _allocate_memory(self, args): #fake por enquanto
         for x in range(self.size):
             try:
                 self.items.append(args[x])
@@ -44,9 +44,9 @@ class StaticArray:
         except:
             raise Exception
         
-    def set(self, index, value):
+    def set(self, index, item):
         try:
-            self.items[index] = value
+            self.items[index] = item
         except:
             raise Exception
 

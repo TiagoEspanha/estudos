@@ -1,0 +1,63 @@
+Lista 5
+1 - Qual a diferença fundamental entre o roteador e um comutador da camada de enlace?
+	
+	- Os dois tem como funcao encaminhar pacotes, porém o comutador usa o endereço MAC e o roteador o IP e o roteador tem algumas funcoes a mais na camada de aplicacao, como segurança.
+
+
+3 - Descreva como pode ocorrer perda de pacotes em portas de entrada (sem usar buffers infinitos). Descreva como pode ocorrer perda de pacotes em portas de saída.  
+
+	- Se a taxa de pacotes for muito maior q a taxa de entrada, eventualmente o buffer(fila) de entrada vai chegar ao seu limite, e assim vai comecar a perder pacotes.
+
+4 - Suponha que o hospedeiro A envie ao hospedeiro B um segmento TCP encapsulado em um datagrama IP. Quando o hospedeiro B receber o datagrama, como sua camada de rede sabe que deve passar o segmento (isto é, a carga útil do datagrama) para TCP e não para UDP ou qualquer outra coisa?
+
+	- O datagrama ip tem a informaçao sobre qual protocolo deve ser utilizado na camada de transporte. O campo de protocolo de 8 bits
+
+5 - Compare os campos de cabeçalho do IPv4 e do IPv6. Quais as principais diferenças? Eles têm algum campo em comum?
+	
+	- O IPv6 tem tamanho fixo e não contem a maioria dos campos que o IPv4 tem. Contém o IP de origem e destino. Cabeçalhos semalhantes: Comprimento (IPv6:comprimento da carga útil, IPv4:comprimento do datagrama), proximo passo(IPv6:próximo cabeçalho, IPv4:protocolo da camada
+superior) e duraçao(IPv6:limite de saltos, IPv4:tempo de vida) 
+
+6 - Suponha que você compre um roteador sem fio e o conecte a seu modem a cabo. Suponha também que seu ISP designe dinamicamente um endereço IP a seu dispositivo conectado (isto é, seu roteador sem fio). Suponha ainda que você tenha cinco PCs em casa e que usa 802.11 para conectá-los sem fio ao roteador. Como são designados os endereços IP aos cinco PCs? O roteador sem fio usa NAT? Por quê?
+
+	- O DHCP designa esses ips. Sim, pois utiliza apensar o endereço dado pelo provedor
+
+7 - Endereço destinho: h3, Interface: 3
+
+b - Não. Só sabemos o ip destino. 
+
+8 - 
+
+b-  
+1 end = Interface 3
+2 end = Interface 2
+3 end = Interface 3
+
+9-    
+Interface 0 - 1000 0000 a 1111 1111 - 128
+Interface 1 - 1000 0000 a 1011 1111 - 64
+Interface 2 - 1110 0000 a 1111 1111 - 32
+Interface 3 - 0000 0000 a 0111 1111 - 128
+
+10- 
+60 = 2^6 = prefixo = 32 - 6 = 26
+90 = 2^7 = prefixo = 32 - 7 = 25
+12 = 2^4 = prefixo = 32 - 4 = 28
+
+213.1.1.0000 0000/26
+213.1.1.1000 0000/25
+213.1.1.1100 0000/28
+
+11-
+50 	= 2^6 	= prefixo = 32 - 6 = 26
+400 = 2^9 	= prefixo = 32 - 9 = 23
+50 	= 2^6 	= prefixo = 32 - 6 = 26
+32 	= 2^5 	= prefixo = 32 - 5 = 27
+
+Departamento --- subrede --- Prefixo
+A			 --- 26		 --- 199.67.46.0	
+B			 --- 23		 --- 199.67.44.0	
+C			 --- 26		 --- 197.67.46.64	
+D			 --- 27		 --- 197.67.46.128
+
+
+ACHAR NUMERO DA INTERFACE = 32 - LOG² quantidade de interfaces ex: 50 interfaces = log²(50) = 6 pq 2 elevado a 6 = 64 e é o mais proximo de 50.

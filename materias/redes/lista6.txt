@@ -1,0 +1,30 @@
+2 - Compare os anúncios utilizados por RIP e OSPF e aponte suas diferenças
+
+	- OSPF envia o anuncio para todos os outros roteadores, RIP envia somente para os vizinhos
+
+
+4 - Defina e aponte as diferenças entre os seguintes termos: sub-rede, prefixo e rota BGP.
+
+	- 	Sub-rede: Faz parte de uma rede maior, nao possui um roteador. É definida o pela interface do rodeador de borda(gateway?) e do host.
+		Prefixo: Parte da rede de um endereco ip. Abrange uma ou mais subredes. IP. Está descrito na forma a.b.c.d / x.
+		Rota BGP:  Em um sessao BGP, quando o roteador anuncia algo, ele adiciona seus atributos. Isso e uma rota BGP
+
+5 - Como o BGP usa o atributo NEXT-HOP? Como ele usa o atributo AS-PATH?
+NEXT-HOP - Guarda o numero de saltos até o roteador de saida da as
+AS-PATH  - Define o caminho entre dois AS, nao necessariamente o mais curto.
+
+6 -
+Inundação não controlada 	 - Um no pode receber varias copias do msm pacote e pode repassar várias cópias de um pacote pelo mesmo enlace de saída.
+
+Inundação controlada		 - Um no pode receber varias copias do msm pacote mas NÃO pode repassar várias cópias de um pacote pelo mesmo enlace de saída.
+
+Spanning-tree 				 - Um no NÃO pode receber varias copias do msm pacote e NÃO pode repassar várias cópias de um pacote pelo mesmo enlace de saída.
+
+7- feito no papel
+8- feito no papel
+9- feito no papel
+11 - 
+Topologia X = w --- a --- b --- x --- c --- y
+Topologia W = w --- a --- b --- x
+					\
+					 c --- y

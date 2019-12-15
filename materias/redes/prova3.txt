@@ -1,0 +1,41 @@
+2^12 = 4096 / 8 = 512 - 2 = 510
+
+32 - 9 = 23
+
+108 107 128 0
+108 107 130 0
+
+TCP
+
+ssthresh 	- Ponto que para de duplicar segmentos
+cwnd 	 	- Quantidade de segmentos que serão enviados
+
+etapas -
+Partida lenta 					- Parte que aumenta envio de segmentos exponencialmente, 2x
+Prevencao de congestinamento 	- Aumenta lineamente, 1+
+Recuperacao rapida				- 
+
+Timeout - CWND para 1, ssthresh para CWND/2
+Perder 3 ack - metade do atual
+
+TCP RENO e TCP Tahoe - A diferença está em como lidam com ack repetidos. 
+
+TAHOE 	- seta a cwnd pra 1 			  , seta ssthresh para mas metade do cwnd
+RENO 	- seta a cwnd para metade do atual, seta ssthresh para igual cwnd + 3 e entra em recuperacao rapida.   
+
+AS-PATH - define um caminho entre dois AS, mas nao necessariamente o caminho mais curto, pois pode ter restricoes. 
+NEXT-HOP  - define o numero de saltos até o roteador 
+
+
+rtt   	--- 	seq a-b --- ack b-a --- flags 	--- qtd segmentos
+
+100 	---  	0 	 	---	1	 	--- SYN		--- 1 
+200 	---  	1 	 	---	101	 	--- 		--- 1 
+300 	---  	101	 	---	301	 	--- 		--- 2 
+400 	---  	301	 	---	701	 	--- 		--- 4 
+500 	---  	701	 	---	1501 	--- 		--- 8 
+600 	---  	1501 	---	2501 	--- 		--- 10 
+700 	---  	2501 	---	2701 	--- 		--- 11
+800 	---  	2701	---	2701 	--- fin		--- 1
+
+

@@ -6,7 +6,6 @@ class TestStaticArray(unittest.TestCase):
     def setUp(self):
         self.static_array_size = 4
         self.static_array = StaticArray(self.static_array_size, 1, 2, 3)
-        print (self.static_array.items)
 
     def test_allocate_memory(self):
         self.assertEqual(self.static_array.last_index, 3)

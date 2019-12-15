@@ -3,26 +3,33 @@ from dinamic_array import DinamicArray
 
 class TestDinamicArray(unittest.TestCase):
 
-    def SetUp(self):
-        pass
+    def setUp(self):
+        self.dinamic_array = DinamicArray(1, 2, 3)
 
     def test_init(self):
-        pass
+        self.assertEqual(self.dinamic_array.getItems(), [1,2,3,None])
+        dinamic_array_bigger_inicial_size = DinamicArray(1,2,3,4)
+        self.assertEqual(dinamic_array_bigger_inicial_size.getItems(), [1,2,3,4,None,None,None,None])
+    
+    def test_if_is_subscriptable(self):
+        self.assertEqual(self.dinamic_array[0], 1)
+        self.dinamic_array[0] = 99
+        self.assertEqual(self.dinamic_array[0], 99)
+
+    def test_search(self):
+        self.assertEqual(self.dinamic_array.search(3), 2)
+        self.assertEqual(self.dinamic_array.search(1), 0)
+        self.assertEqual(self.dinamic_array.search(0), -1)
 
     def test_append(self):
-        self.static_array.append(4)
-        self.assertEqual(self.static_array.items, [1,2,3,4])
-        self.assertRaises(Exception, self.static_array.append, 5)
+        pass
 
     def test_delete(self):
-        self.static_array.delete(0)
-        self.assertEqual(self.static_array.items, [None, 2, 3, None])
-        self.assertRaises(Exception, self.static_array.delete, 5)
-
-    def test_get(self):
         pass
 
     def test_expand(self):
         pass
 
     
+if __name__ == '__main__':
+    unittest.main()

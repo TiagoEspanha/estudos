@@ -1,0 +1,41 @@
+1- Quem comeca a comunicação é o cliente.
+
+2- O IP e a porta do socket
+
+3- UDP, pois só precisa de 1 rtt
+
+4- Porque são aplicações que precisam que todos os dados sejam recebidos.
+
+5- O cache encurta a distância física do cliente e servidor, diminuindo o tempo das requisições
+
+6- Porque o FTP abre uma conexão paralela para tratar da parte 'administrativa', como nome do usuário e senha, e outra para 
+mandar os arquivos.
+
+7-Sim.
+
+8- f v f f f
+
+9- 
+a- http://gaia.cs.umass.edu/cs453/index.html
+b- 1.1
+c- Persistente.
+d- Não consta na resposta HTTP
+e- Mozilla. Pois as vezes o conteúdo retornado pode váriar de navegador para navegador. Exemplo: Navegadores Chrome podem usar imagens .webp
+
+10- 
+a- Sim, 12:39:45 GMT
+b- 10\12\2005 as 18:27:47GMT
+c- 3874
+d- <!doc, Sim
+
+11-
+a- 2*RTT0 + RTT1 + RTT2 + ? + RTTn
+b- RTT1 + ? + RTTn + 2 * RTT0 + 8 * 2 * RTT0 = 18 * RTT0 + RTT1 + ? + RTTn
+c- RTT1 + ? + RTTn + 2 * RTT0 + 2 * 2 * RTT0 = 6 * RTT0 + RTT1 + ? + RTTn
+d- RTT1 + ? + RTTn + 2 * RTT0 + 8 · RTT0 = 10 * RTT0 + RTT1 + ? + RTTn
+
+12-
+a-9,1s
+b-1,56s
+
+

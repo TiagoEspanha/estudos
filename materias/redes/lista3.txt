@@ -1,0 +1,92 @@
+1 - 81
+b - 82
+c - 23
+d - 23
+e - Sim
+f - Não
+
+2- 
+A: Porta origem: 80, endereço de origem b, porta de destino 26145, ip de destino a
+C esquerda: Porta origem: 80, endereço de origem b, porta de destino 7532, ip de destino c
+C direita: Porta origem: 80, endereço de origem b, porta de destino 26145, ip de destino c
+
+3 e 4- 
+EstimatedRTT = 0,875 • EstimatedRTT + 0,125(a) • SampleRTT
+RTTvariacao = (1 – b) • RTTvariacao + b • |SampleRTT – EstimatedRTT|
+timeout = RTTestimado + 4Rttvariacao
+
+b = 0.25
+sampleRtt1 = 106; sampleRtt2 = 120, EstimatedRTT = 100
+
+EstimatedRTT = 0.875 * 100 + 0,125 * 106 = 87,5 + 13,25 = 100,75
+RTTvariacao  = 0.75 * 5 + 0.25  * (106 - 100,75) = 5,06
+timeout = 100,75 + 4*5,06 = 121 
+
+EstimatedRTT = 0.875 * 100,75 + 0.125 * 120 = 103.15
+RTTvariacao  = 0.75 * 5,06 + 0.25  * (120 - 103.15) = 8
+timeout = 103.15 + 24 = 135.15
+
+5 - 
+a - 20
+b - 90
+
+6 
+a-
+cliente 		---- host
+m0 				--->
+				<--- ack0
+m1(corrompido)	--->
+				<--- ack0(reenvia o ultimo ack)
+m1				--->
+				<--- ack1
+
+b-
+cliente 		---- host
+m0 				--->
+				<--- ack0
+m1				--->
+				<--- ack0(corrompido)
+timeout 		----
+m1				--->
+				<--- ack1
+
+7-
+1500 * 8(transformar em bits) / 1gbps = 10^9 = 12000 / 10^9 = 12/10^6
+Uremet = (L/R) / (RTT + L/R)
+
+0.98 = (0.012/30 + 0.012) * n = 2451 pacotes
+
+9- Para evitar retransmissão imatura. 
+
+10- 
+GoBackN 
+	Segmentos 	- Volta pro segmento perdido e reenvia todos após ele.
+	ACKS 		- Envia o ack do ultimo segmento recebido. 
+
+SelectRepeat
+	Segmentos 	- Reenvia somente o que faltou
+	ACKS 		- Reenvia somente o que faltou
+
+TCP 
+	Segmentos 	- Reenvia somente o que faltou
+	ACKS 		- Envia o ack do proximo a receber.
+
+GBN 
+	- Segmentos - A envia 1 2 3 4 5, o 2 se perde, envia 2 3 4 5 novamente. Total: 9
+	- ACKS 		- B envia 1 1 1 1 na o primeira leva, depois 2 3 4 5. total: 8
+
+SR
+	- Segmentos - A envia 1 2 3 4 5. 2 se perde, reenvia o 2. Total 6
+	- ACKS 		- B envia 1 3 4 5, reenvia o 2. Total 5
+
+TCP 
+	- Segmentos - A envia 1 2 3 4 5. 2 se perde, reenvia o 2. Total 6
+	- ACKS 		- B envia 2 2 2 2, reenvia o 6. Total 5
+
+b- TCP, pois tem retrasmissao rapida para evitar cair no timeout e voltar a mandar somente um segmento.
+
+11- sim.
+
+
+
+

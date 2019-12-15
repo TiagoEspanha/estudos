@@ -16,6 +16,7 @@ EstimatedRTT = 0,875 • EstimatedRTT + 0,125 • SampleRTT
 Além de ter uma estimativa do RTT, também é valioso ter uma medida de sua variabilidade. O [RFC 6298]
 define a variação do RTT, DevRTT, como uma estimativa do desvio típico entre SampleRTT e EstimatedRTT:
 DevRTT = (1 – b) • DevRTT + b • |SampleRTT – EstimatedRTT|
+
 Note que DevRTT é uma MMEP da diferença entre SampleRTT e EstimatedRTT. Se os valores de
 SampleRTT apresentarem pouca variação, então DevRTT será pequeno; por outro lado, se houver muita variação, 
 DevRTT será grande. O valor recomendado para é 0,25.
