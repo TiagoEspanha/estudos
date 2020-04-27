@@ -1,0 +1,9 @@
+DDD
+referencia: https://gupy-io.atlassian.net/wiki/spaces/PROD/pages/609026049/Padr+o+de+Arquitetura+para+Projetos+Serverless
+
+Domain - Responsavel pelas regras de negocio, checar a integridade do objeto. Na gupy, cm nao temos muitas regras de negocio, serve mt pra typar os dados
+Infrastructure - Responsavel por falar com servicoes cm o banco
+Application -
+Interfaces - Camada responsavel por se comunicar com o mundo exterior, ele que observa eventos cm http.
+Modulos - Tudo aquilo que é comum ao servico ou que poderia ser uma lib. Tudo que pode ser reutilizado. Como se fosse um helper
+

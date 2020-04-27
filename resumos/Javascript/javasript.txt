@@ -1,0 +1,8 @@
+tipos de variaveis
+    const - Não quer dizer que é exatamente constante. Meio confuso, e discordo bastante. O valor da variável é constante, mas em casos que
+    o valor da variável é uma referência pra memória, como um objeto, pode-se alterar o valor dos atributos desse objeto. Outro ponto é que
+    quando se passa uma const para um método, não se passa uma copia do objeto, e sim a referencia do próprio objeto.
+
+    const - It does not means that the value cant change. Kind confusing and i disagree. The variable value is constant, but when the value is
+    a reference to the memory, like a object, the attributes can change. Another point is when used on a function, the value on the function
+    will be the reference to the object, not a copy of it

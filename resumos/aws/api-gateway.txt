@@ -1,0 +1,7 @@
+API GATEWAY
+
+O que é:
+
+Diferenças entre HTTP API, API REST e API WebSocket:
+
+O que é uma VPC:
