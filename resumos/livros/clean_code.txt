@@ -1,0 +1,23 @@
+1-Livro começa com um resumo do que é código bom e ruim, sua importância e descrevendo o que esperar dos próximos capítulos.
+
+Porque escrever um código limpo?
+	- Facilita a manuntenção
+	- Facilita testes
+	- Aumenta produtividade
+	- Código limpo estimula uma boa manuntenção e mais código limpo, quantas vezes vemos um código 'feio' e não ligamos pra 
+como mexemos nesse código?!
+
+O que é um código limpo?
+	- Fácil de ler, idealmente bater o olho, ler e entender o que faz. Objetivo claro.
+	- Direto
+	- Expressivo
+	- Bom tratamento de erro
+	- Bem testado
+	- Com responsabilidade única
+	- Nomes significativos
+	- (gosto disso) Apenas uma maneira de fazer algo.
+	- Sem duplicação de código
+	- Miniminiza o número de entidades (classes, metodo, funçoes etc)
+	- Faz parecer que a linguagem foi feita para resolver aquele problema
+
+
