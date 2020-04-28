@@ -1,4 +1,8 @@
+Node
+	- Raiz de todo objeto da godot  
 
+Scene
+	- 
 
 PhysicsBodys 
     Bodys2D 
@@ -9,7 +13,63 @@ PhysicsBodys
     Collisions
         Precisa adicionar um objeto de collision nos bodys para acontecer as collisioes.
 
+Grupos 			- Funcionam como tags em outras engines
+Notifications 	- Funciona como eventos especificos da godot
+Signals 		- Funciona como um sistema de eventos (observer pattern)
+
     
-Scriptable Objects
+Build-in functions
+
+	Funções de 'evento':
+
+	- _init			- Chamada quando é instanciado o objeto - construtor da classe
+	- _enter_tree 	- Chamada quando o objeto entra na cena, mas seus 'filhos' ainda não
+	- _ready		- Chamada quando o objeto e seus 'filhos' entram numa cena ativa
+	- _exit_tree 	- Chamada quando o objeto sai da cena ativa. Todos seus 'filhos' já saíram nesse ponto.
+	- _process 		- Chamada todo frame. Pode ser ativado ou desativado utilizando a funcao set_process(bool). Importante notar que varia de ambiente pra ambiente, então utilizar delta(ver abaixo) para deixar "COISAS" independentes do frame rate.
+	_physics_process - Semelhante ao _process, porém é chamado um número fixo de vezes. Configurável em "Project Settings, under Physics -> Common -> Physics Fps."
+
+	Funcoes de grupo:
+
+	- add_to_group	- Adiciona objeto em um grupo(tag)
+		parametros: (nome do grupo: string)
+	
+	- call_group	- Chama a função passada em todos os nodes de determinado grupo 
+		parametros: (nome do grupo: string, funcao a ser chamada : string)
+
+	- get_nodes_in_group - Retorna nodes de determinado grupo
+		parametros: (nome do grupo: string)
+
+	Funcoes de notificação:
+	
+	_notification	- Funcao que centraliza o recebimento notificacoes(eventos)
+
+	Funcoes do node:
+	
+	new 		- Instancia um node pelo código.
+	free 		- Retira o node da cena. Bom ressaltar que remove os filhos do node tb. DE PREFERENCIA USAR queue_free().
+	queue_free 	- Igual a função free, porém apaga de forma segura, quando o node nao estiver no "meio de algo"
+	$nomedonode - Achar node  
+
+	Funcoes da cena:
+
+	load 		- Carrega uma cena. Bom atentar que não retorna um node, mas sim um "PackedScene". Chamar instance pra transformar em node
+	preload 	- Pre carrega uma cena, durante o "parse time"  
+	instance 	- Transforma a instancia de uma cena(PackedScene) em um node.
+
+	Funcoes referentes a signals:
+
+		- Connect	- Colocar um node para ouvir um signal
+			parametros: (nome do sinal : string, node que vai conectar: node, nome da funcao para chamar: string)
+		- _on_<node_name>_<signal_name> - Padrao para funcao callback de um signal
+
+		- emit_signal - Emitir um sinal
+
+
+Build-in vars
+	- delta 	- Tempo decorrido entre um frame e outro. Utilizado para padronizar "COISAS" chamadas no _process.
+
+Keywords
+	class_name  - 
           
 
