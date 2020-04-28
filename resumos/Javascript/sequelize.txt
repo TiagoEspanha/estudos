@@ -1,0 +1,18 @@
+https://sequelize.org/
+
+O que é: É uma lib para nodejs que implementa um ORM.
+
+Pontos:
+    - O método build, cria uma instancia de um model, porém sem conexão nenhuma com o banco, é apenas um objeto que nos padrões da
+tabela que o model tem o dominio. Após criar uma instancia com o build, para salvar no banco, deve-se usar o metodo save. 
+O método create é uma junção dos dois metodos.
+
+    - Para printar uma instancia do model, usar instancia.toJSON(), pois printar a instancia diretamente printa coisas a mais, rela-
+cionadas a lib.
+
+    - O método reload sincroniza a instancia do modelo com a database
+
+    - O método save ignora as relações entre models. 
+
+
+    

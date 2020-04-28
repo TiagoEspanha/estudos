@@ -1,0 +1,8 @@
+LAMBDA
+
+O que é:
+@@@: Um serviço que terceriza/abstrai toda complexidade de gerenciar/subir um servidor, pagando somente pelo tempo
+de computação usado e se preocupando somente com o código que executa a tarefa requirida.
+
+
+Quando usar:
