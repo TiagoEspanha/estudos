@@ -1,0 +1,103 @@
+CODE REVIEW
+
+TO DO
+    Geral:
+        - Ler clean code
+        - Ler sistema de proposal (https://github.com/gupy-io/gupy-proposals/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+        - Olhar confluence sobre a arquitetura do DDD
+        - Funcao geradora
+        - Estudar melhor ORM, DAO e REPOSITORY
+    Python
+        - Entender melhor poo
+            - @classmethod, @staticmethod, cls,
+        - ver async/await em python
+        - Entender mock em testes no python
+        - Entender melhor importação
+        - Decorators
+    JS
+        - Promises
+        - var, let, const
+        - require, import from
+
+
+- Técnicas para fazer o PR
+    -Não ver somente code style, checar sempre coisas relacionadas a negócio.
+    -Não assumir que os termos usados estão corretos (em relação ao negócio ao a código mesmo)
+
+
+- Performace
+    - Quando se importar com performace?
+        Sempre bom olhar performance, principalmente código que seja fácil mudar que gere performance muito melhor
+        - Ficar atento a Big One Notation
+        - Códigos poucos performáticos deixar mal exemplo
+            ex: Mal uso de uma estrutura de dados
+        - Melhor fazer algo generico do que único
+            ex: Apis prontas para fazer book(retornar várias instâncias) em vez de uma única instância
+        - Se preocupar com quantidades retornadas, usar paginação para evitar sobre carga
+        - Sempre extrapolar pro pior cenario q temos hoje
+            ex: Em produção vagas com mais de um milhão de candidatos, mas em staging não tinhamos nada do tipo. Logo em staging
+            nao quebraria nenhum teste, mas em produção sim.
+
+
+- Organização/Clareza
+    - Usar o termo correto de negócio, mesmo nao estando no BD
+    - Usar o termo mais conciso possível e com mais significado
+    - Conferir typos
+
+- Padrões
+    - Quais padroes seguir em JS
+        - Bom sempre seguir ECSA6+
+         ex: copiar objetos com {...object}
+        -
+
+    - Quais padroes seguir em PYTHON
+        - Pensar em decorators
+        - Seguir Pep8
+        - Bom ver como faz coisas mais funcionais like
+
+- Testes
+    - BOAS PRATICAS
+        - Independentes um do outro
+        - Deve rodar em qualquer ordem
+        - Mais unitários que de integração
+        - Pensar em como diferentes camadas devem ser testadas.
+            ex: Interfaces e repositórios, em geral, terão testes de integração
+
+    - Quando fazer teste unitário
+        - Sempre que possível, deve ser o teste com maior massa
+        - Qualquer branch (if) é um teste
+        - Regra de negócio
+        - Bom ver alguma ferramenta de coverage test para saber o quanto do código está sendo testado
+
+    - Quando fazer teste de integração
+        - Preferir teste unitários sempre que possível, pois teste integração é muito lento
+        - Teste para cada tipo integração, pois podem ter implementações diferentes.
+            Ex: Filtro pode ser diferente entre postgree e outro banco
+
+    - TESTE DE INTERFACE
+        - So testar o caminho feliz, pois o resto da pra cobrir com testes unitários
+
+    - Performace x área coberta pelo teste
+        - Melhor pagar o preço do teste do que não testar.
+
+- Respeitar a Arquitetura
+    - Cada código deve ter cada coisa estar na camada certa
+    - Olhar confluence sobre a arquitetura do DDD
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+PRODUTIVIDADE
+
+- Dicas de produtividade home office na quarentena
+    - Pomodoro
+    - Fone com isolamento
+    - Desabilitar notifições
+
+- Escrever código 'ruim' primeiro e depois refatorar ou já escrever 'bonito'?
+    - Esboçar se estiver em dúvida
+    - TDD pode ser uma boa solução
+        - Escrever testes para cobrir todos os cenários
+        - Implementar o suficiente pro teste passar
+        - Refatorar se necessário
+

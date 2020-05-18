@@ -1,9 +1,11 @@
 DDD
-referencia: https://gupy-io.atlassian.net/wiki/spaces/PROD/pages/609026049/Padr+o+de+Arquitetura+para+Projetos+Serverless
+- referencia: https://gupy-io.atlassian.net/wiki/spaces/PROD/pages/609026049/Padr+o+de+Arquitetura+para+Projetos+Serverless
 
-Domain - Responsavel pelas regras de negocio, checar a integridade do objeto. Na gupy, cm nao temos muitas regras de negocio, serve mt pra typar os dados
-Infrastructure - Responsavel por falar com servicoes cm o banco
-Application -
-Interfaces - Camada responsavel por se comunicar com o mundo exterior, ele que observa eventos cm http.
-Modulos - Tudo aquilo que é comum ao servico ou que poderia ser uma lib. Tudo que pode ser reutilizado. Como se fosse um helper
+    -Domain - Responsavel pelas regras de negocio, checar a integridade do objeto. Na gupy, cm nao temos muitas regras de negocio, serve mt pra typar os dados
+    -Infrastructure - Responsavel por falar com servicoes cm o banco
+    -Application -
+    -Interfaces - Camada responsavel por se comunicar com o mundo exterior, ele que observa eventos cm http.
+    -Modulos - Tudo aquilo que é comum ao servico ou que poderia ser uma lib. Tudo que pode ser reutilizado. Como se fosse um helper
 
+Reporitorio - É a camada responsavel por falar com o ORM? O importante aqui é que ela deve devolver sempre uma info padronizada, sem detalhes
+de implementacao, pois pode ter outro repositorio que lida com outro tipo de ORM.
