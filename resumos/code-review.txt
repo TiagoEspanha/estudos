@@ -9,15 +9,15 @@ TO DO
         - Estudar melhor ORM, DAO e REPOSITORY
     Python
         - Entender melhor poo
-            - @classmethod
-            - @staticmethod
-            - cls
-            - ver async/await em python
-            - Entender mock em testes no python
+            - @classmethod, @staticmethod, cls,
+        - ver async/await em python
+        - Entender mock em testes no python
         - Entender melhor importação
+        - Decorators
     JS
         - Promises
         - var, let, const
+        - require, import from
 
 
 - Técnicas para fazer o PR

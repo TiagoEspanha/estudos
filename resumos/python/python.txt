@@ -1,0 +1,40 @@
+- with - contexto
+
+KWARGS and ARGS
+    - (superficial) Args = arguments, kwargs = KEY WORD arguments. Na prática, após os argumentos 'padrões' da funcao,
+quando passamos *args e **kwargs, args vai pegar todos os parametros não nomeados, juntar e transformar numa TUPLA, enquanto kwargs vai pegar
+os parametros nomeados (ex: size=3) juntar e transformar num dicionário. * pode ser usado para pegar uma estrutura de dado e devolver seus
+dados de forma separada. (ex: a = (1,2,3) :. print(*a) :. 1 2 3 )
+
+- starred expression
+
+- staticmethod e classmethod
+
+- subscriptable -(superficial) Uma classe subscriptable é uma classe que implementa os metodos __getitem__ e
+__setitem__, possibilitando assim usar o "syntax sugar" [].
+
+- __name__ == '__main__':
+
+TIPOS DE METODOS:
+
+    ref: https://www.youtube.com/watch?v=rq8cL2XMM5M
+
+    - Metodos da instancia: precisam que o primeiro parametro seja instancia da classe, por padrão chamamos esse
+parametro de self. O python passa automaticamente esse parametro, então não precisamos colocar ele quando chamamos
+o metodo de instancia, mas precisamos declara-lo no metodo. Ex: metodo_da_instancia(self, parm1):
+
+    - Método da classe: são métodos que rodam pela classe, não pela instancia. Bom ressaltar que podem ser chamados
+pela instancias também, mas operam a classe. Precisa receber o decorator @classmethod e recebem o primeiro parametro
+a classe em si, por padrão chamado de cls. Python também passa automáticamente a classe para o metodo. Muito usado
+para criar construtores alternativos.
+    Ex:
+        @classmethod
+        def metodo_da_classe(cls, parm1):
+
+    - Método estatico: São métodos que não precisam nem da instancia nem da classe para serem executados, logo não tem
+acesso direto a seus atributos.
+    ex:
+        @staticmethod
+        def metodo_estatico(parm1):
+
+
