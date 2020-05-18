@@ -1,0 +1,9 @@
+#Referencias: https://martinfowler.com/articles/practical-test-pyramid.html
+
+Importancia de testes automatizados:
+    - Testes automatizados são fundamentais para a manuntenção/expansão/refatoração de um código. Com ele 
+    podemos garantir que nenhuma mudança em uma parte do código afete outras.
+
+Piramede de testes:
+    - O importante desse conceito é 'escreva mais testes rápidos e simples (unitários) e menos 
+    os mais pesados (integração?)', 
