@@ -1,0 +1,20 @@
+3a
+
+knife - 3
+fork - 2
+desserts - stawberries and cream
+spoon - 7
+plate - 1
+glass - 3
+main courses - grilled steak and chips
+napkin - 5
+salt and paper - 4
+starters - onion soup
+
+b
+boiled rice - 12
+roast chicken - 16
+baked potatoes - 13
+grilled sausages - 14
+fried eggs - 11
+steamed vegetables - 15   
