@@ -1,0 +1,44 @@
+Uso básico: 
+- O dockerfile serve para automatizar a criação de uma imagem.
+- O docker não copia os arquivos automaticamente para o container, então é necessário coloca-los lá, normalmente
+utilizando o comando COPY
+- Não sabemos o usuário padrão criado para o container, então é necessário criar um usuário e utiliza-lo.
+Exemplo: RUN useradd -ms /bin/bash python, USER python
+
+
+Comandos:
+    FROM {nome da imagem}   - Escolhe a imagem que o docker vai ser criado apartir de
+    RUN {comando}           - É um passo da montagem da imagem, faz parte do processo de subir a imagem
+    CMD {comando}           - É o comando que vai rodar quando o container for executado. Somente um por dockerfile. Pode ser subscrito
+    pela linha de comando. 
+    COPY {de} {para}        - Copia arquivos para o containers
+    USER {nome do usuario}  - Define o usuário a ser utilizado
+    WORKDIR {path}          - Define o diretorio que vai ser usuado para executar comandos. 
+
+
+exemplo:
+
+FROM python:3.7
+
+RUN curl --silent --location https://deb.nodesource.com/setup_10.x | bash - && \
+    apt install nodejs
+
+RUN npm install serverless -g
+
+RUN useradd -ms /bin/bash python
+
+RUN mkdir -p /home/python/app && chown python:python /home/python/app
+
+WORKDIR /home/python/app
+
+USER python
+
+COPY package.json package-lock.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD serverless config credentials --provider aws -o --key ${AWS_ACCESS_KEY_ID} --secret ${AWS_SECRET_ACCESS_KEY} && \
+    serverless deploy -v
+

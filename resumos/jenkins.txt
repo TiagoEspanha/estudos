@@ -1,0 +1,10 @@
+- O que é INTEGRAÇÃO CONTINUA: É o padrão de deploy que define processos (testes unitarios, testes de 
+integração, automatização do deploy no servidor, etc...) sempre que sobe código novo para produção, 
+possibilitando assim deploys mais frequentes.
+
+
+- O que é: E uma ferramenta de integração continua que define uma pipeline (linha de montagem/processos) para deploy.
+por exemplo: Após o merge em master, roda os testes, se passar faz o deploy no servidor aws, senão passar da uma 
+mensagem de erro.
+
+

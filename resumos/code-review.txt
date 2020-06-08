@@ -11,6 +11,7 @@ TO DO
         - Olhar confluence sobre a arquitetura do DDD
         - Funcao geradora
         - Estudar melhor ORM, DAO e REPOSITORY
+        - SOLID
     Python
         - Entender melhor poo
             - @classmethod, @staticmethod, cls,
@@ -22,6 +23,11 @@ TO DO
         - Promises
         - var, let, const
         - require, import from
+        - Map retornando array de props
+
+    Padrões
+        - template method
+        - strategy
 
     TYPESCRIPT
         - NULL|UNDEFINED
@@ -44,12 +50,17 @@ TO DO
         - Sempre extrapolar pro pior cenario q temos hoje
             ex: Em produção vagas com mais de um milhão de candidatos, mas em staging não tinhamos nada do tipo. Logo em staging
             nao quebraria nenhum teste, mas em produção sim.
+        - Map/reduces retornando array de promises 
 
 
 - Organização/Clareza
     - Usar o termo correto de negócio, mesmo nao estando no BD
     - Usar o termo mais conciso possível e com mais significado
     - Conferir typos
+    - metodo tem resposabilidade só
+    - nível de abstracao certo
+    - Seguir principios de SOLID
+
 
 - Padrões
     - Quais padroes seguir em JS
@@ -69,6 +80,9 @@ TO DO
         - Mais unitários que de integração
         - Pensar em como diferentes camadas devem ser testadas.
             ex: Interfaces e repositórios, em geral, terão testes de integração
+        - Integração caminho feliz
+        - Qualidade do teste - melhor tipo de teste é o q testa entrada e saida
+        - Qual tipo deteste unitario - 
 
     - Quando fazer teste unitário
         - Sempre que possível, deve ser o teste com maior massa
@@ -91,6 +105,12 @@ TO DO
     - Cada código deve ter cada coisa estar na camada certa
     - Olhar confluence sobre a arquitetura do DDD
 
+- devops
+    se preocupar com monitoracao
+    se preocupar com falhas estruturais, como falha no banco
+    CI pra producao
+    preocupacao com segurança
+    preocupar com trafego
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 

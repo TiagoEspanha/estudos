@@ -1,0 +1,22 @@
+OAUTH
+
+OAUTH2
+
+    O que é: É um padrão de autenticação utilizado para comunicação entre aplicações, sem precisar utilizar 
+usuários e senhas como login normal de usuários.
+
+Passos de implementação:
+
+    - Cadastro do app       :
+    - Pegar grant token     :
+    - Pegar Access token    :
+    - Acessar api           :
+    
+
+Agentes:
+
+    - Refresh Token : 
+    - Access Token  :
+    - Client id     : Identificador da aplicação cadastrada
+    - Client secret : 
+    - Redirect_url  : Local para ir após processo de autenticação, 
