@@ -1,5 +1,9 @@
 CODE REVIEW
 
+DICAS GERAIS
+    - Dar o máximo de informação PERTINENTE em mensagens de erro
+    -
+
 TO DO
     Geral:
         - Ler clean code
@@ -18,6 +22,9 @@ TO DO
         - Promises
         - var, let, const
         - require, import from
+
+    TYPESCRIPT
+        - NULL|UNDEFINED
 
 
 - Técnicas para fazer o PR
