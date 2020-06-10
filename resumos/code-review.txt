@@ -1,5 +1,9 @@
 CODE REVIEW
 
+DICAS GERAIS
+    - Dar o máximo de informação PERTINENTE em mensagens de erro
+    -
+
 TO DO
     Geral:
         - Ler clean code
@@ -24,6 +28,9 @@ TO DO
     Padrões
         - template method
         - strategy
+
+    TYPESCRIPT
+        - NULL|UNDEFINED
 
 
 - Técnicas para fazer o PR
@@ -120,4 +127,6 @@ PRODUTIVIDADE
         - Escrever testes para cobrir todos os cenários
         - Implementar o suficiente pro teste passar
         - Refatorar se necessário
+
+        
 

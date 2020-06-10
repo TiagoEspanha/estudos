@@ -1,0 +1,34 @@
+3-
+	2- meat
+	3- raw
+	4- home-made
+	5- steak
+	6- frozen
+	7- meal
+	8- spicy
+	9 chicken
+	10 takeaway
+
+b
+
+	1 knofe
+	2 fork
+	3 napkins
+	4 glass 
+	5 srimps
+	6 eggs
+	7 streberries
+	8 salt and paper
+
+MORE WORDS TO LEARN
+
+1 prato fundo
+2 prato
+3 gordura
+4 mel
+5 porção
+6 sopa
+7 ensopato
+8 melancia
+9 comer fora
+10 esquentar
