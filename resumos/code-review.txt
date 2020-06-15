@@ -12,6 +12,7 @@ TO DO
         - Funcao geradora: map, reduce, flatmap, lambda 
         - Estudar melhor ORM, DAO e REPOSITORY
         - SOLID
+        - stub, mock, spy
     Python
         - Entender melhor poo
             - @classmethod, @staticmethod, cls,
