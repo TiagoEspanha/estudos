@@ -12,22 +12,22 @@
 
 1b
 court
-course
-pool
-circuit
-track
 pitch
-slole
+pool
+track
+circuit
+course
+slope
 
-2
+2a
 beat beat
 won won
 lost lost
 draw drawn
 
 2b
-lost
 beat
+lost
 draw
 won	
 
