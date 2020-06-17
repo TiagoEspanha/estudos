@@ -2,16 +2,17 @@ CODE REVIEW
 
 DICAS GERAIS
     - Dar o máximo de informação PERTINENTE em mensagens de erro
-    -
+    - 
 
 TO DO
     Geral:
         - Ler clean code
         - Ler sistema de proposal (https://github.com/gupy-io/gupy-proposals/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
         - Olhar confluence sobre a arquitetura do DDD
-        - Funcao geradora
+        - Funcao geradora: map, reduce, flatmap, lambda 
         - Estudar melhor ORM, DAO e REPOSITORY
         - SOLID
+        - stub, mock, spy
     Python
         - Entender melhor poo
             - @classmethod, @staticmethod, cls,
@@ -24,6 +25,8 @@ TO DO
         - var, let, const
         - require, import from
         - Map retornando array de props
+        - yield x await
+        - generator function
 
     Padrões
         - template method
