@@ -13,11 +13,12 @@ g - had already start - turned on - was lossing - were playing
 captain
 coach
 warn up
-fat
+fit
 court
 referee
-
+slope
 train
+track
 
 -b
 was winning

@@ -1,5 +1,6 @@
 9.txt
 
+<<<<<<< HEAD
 4b
 gradually
 fine
@@ -23,3 +24,17 @@ hippodrome
 5a
 6b
 7a
+=======
+more words to learn
+
+carreira
+roubar
+coroa
+
+corrida
+espada
+comentarista de tv
+banir
+protestar
+aposentar
+>>>>>>> 471f36754e07ad065005df5a7249545a60ec18fa
