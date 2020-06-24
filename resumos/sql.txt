@@ -1,0 +1,42 @@
+Formas normais
+
+1º forma normal:
+	- tirar atributos repetitivos
+	- criar uma tabela com eles que abstrai eles
+
+2º forma normal:
+	- Tem que estar tudo na forma normal
+	- Atributos não relacionados a chave primaria tem que ser separados em outra tabala 
+
+3º forma normal:
+	- Tem que setar tudo na segunda forma normal
+	- Campos calculados devem ser removidos e deixar as regras de negócio calcular
+
+
+
+Tipos de chaves
+	- Chave primaria: 
+		Usado para identificar uma linha como única, nunca pode se repetir.
+	
+	- Chave primária composta:
+		Chave primária utilizada com mais de uma coluna
+
+	- Chave candidata:
+		Poderia ser chave primária, mas por motivos de regra de negócio não usamos ela com primária
+
+	- Chave estrangéira:
+		Usado para identificar uma linhas única de outra tabela
+
+Constraints
+	
+Indicies	
+
+Definição:
+	- 
+
+Porque nao colocar indices em todas colunas:
+	- Quando vc acelera a consulta com indices, se atrasa a inserção, pois precisa reordenar os indicies 
+	- Alguns campos não tem como ordenar, tipo blob.
+	- Alguns campos você nunca vai buscar por ele, exemplo: opnião de um usuário
+
+
