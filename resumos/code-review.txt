@@ -2,17 +2,20 @@ CODE REVIEW
 
 DICAS GERAIS
     - Dar o máximo de informação PERTINENTE em mensagens de erro
-    - 
+    -
 
 TO DO
     Geral:
         - Ler clean code
         - Ler sistema de proposal (https://github.com/gupy-io/gupy-proposals/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
         - Olhar confluence sobre a arquitetura do DDD
-        - Funcao geradora: map, reduce, flatmap, lambda 
+        - Funcao geradora: map, reduce, flatmap, lambda
         - Estudar melhor ORM, DAO e REPOSITORY
         - SOLID
         - stub, mock, spy
+        - Saber bem os verbos http (GET/POST/PUT/PATCH/DELETE) e melhores formas de usa-los
+        - ver async/await/promises
+
     Python
         - Entender melhor poo
             - @classmethod, @staticmethod, cls,
@@ -53,7 +56,7 @@ TO DO
         - Sempre extrapolar pro pior cenario q temos hoje
             ex: Em produção vagas com mais de um milhão de candidatos, mas em staging não tinhamos nada do tipo. Logo em staging
             nao quebraria nenhum teste, mas em produção sim.
-        - Map/reduces retornando array de promises 
+        - Map/reduces retornando array de promises
 
 
 - Organização/Clareza
@@ -85,7 +88,7 @@ TO DO
             ex: Interfaces e repositórios, em geral, terão testes de integração
         - Integração caminho feliz
         - Qualidade do teste - melhor tipo de teste é o q testa entrada e saida
-        - Qual tipo deteste unitario - 
+        - Qual tipo deteste unitario -
 
     - Quando fazer teste unitário
         - Sempre que possível, deve ser o teste com maior massa
@@ -131,5 +134,5 @@ PRODUTIVIDADE
         - Implementar o suficiente pro teste passar
         - Refatorar se necessário
 
-        
+
 
