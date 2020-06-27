@@ -32,8 +32,8 @@ Constraints
 Indicies	
 
 Definição:
-	- 
-
+	-
+ 
 Porque nao colocar indices em todas colunas:
 	- Quando vc acelera a consulta com indices, se atrasa a inserção, pois precisa reordenar os indicies 
 	- Alguns campos não tem como ordenar, tipo blob.
