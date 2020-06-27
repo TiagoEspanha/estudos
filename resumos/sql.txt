@@ -1,16 +1,16 @@
 Formas normais
 
-1º forma normal:
-	- tirar atributos repetitivos
-	- criar uma tabela com eles que abstrai eles
+	1º forma normal:
+		- tirar atributos repetitivos
+		- criar uma tabela com eles que abstrai eles
 
-2º forma normal:
-	- Tem que estar tudo na forma normal
-	- Atributos não relacionados a chave primaria tem que ser separados em outra tabala 
+	2º forma normal:
+		- Tem que estar tudo na forma normal
+		- Atributos não relacionados a chave primaria tem que ser separados em outra tabala 
 
-3º forma normal:
-	- Tem que setar tudo na segunda forma normal
-	- Campos calculados devem ser removidos e deixar as regras de negócio calcular
+	3º forma normal:
+		- Tem que setar tudo na segunda forma normal
+		- Campos calculados devem ser removidos e deixar as regras de negócio calcular
 
 
 
@@ -20,6 +20,7 @@ Tipos de chaves
 	
 	- Chave primária composta:
 		Chave primária utilizada com mais de uma coluna
+		AGREGREÇÂO:
 
 	- Chave candidata:
 		Poderia ser chave primária, mas por motivos de regra de negócio não usamos ela com primária
@@ -31,12 +32,28 @@ Constraints
 	
 Indicies	
 
-Definição:
-	-
- 
-Porque nao colocar indices em todas colunas:
-	- Quando vc acelera a consulta com indices, se atrasa a inserção, pois precisa reordenar os indicies 
-	- Alguns campos não tem como ordenar, tipo blob.
-	- Alguns campos você nunca vai buscar por ele, exemplo: opnião de um usuário
+	Definição:
+		-
+	 
+	Porque nao colocar indices em todas colunas:
+		- Quando vc acelera a consulta com indices, se atrasa a inserção, pois precisa reordenar os indicies 
+		- Alguns campos não tem como ordenar, tipo blob.
+		- Alguns campos você nunca vai buscar por ele, exemplo: opnião de um usuári
+
+DER OU MER (Diagrama de ENTIDADE e relacionamento ou modelo de entidade e relacionamento)
+
+RELACIONAMENTOS 
+
+	1 pra 1: Uma entidade tem uma outra entidade. Normalmente uma dessas entidades tem uma FK apontando pra row da outra 
+
+	1 pra n: Uma entidade tem diversas da outra
+
+	n pra n: 
+
+COMANDOS SQL
+
+	Insert:
+
+		
 
 
