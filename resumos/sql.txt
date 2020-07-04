@@ -1,3 +1,7 @@
+O QUE O BANCO RETORNA É UM RESULT SET
+
+DDL - DATA DEFINITION LANGUAGE: Linguagem para criar/alterar tabelas no SQL
+
 Formas normais
 
 	1º forma normal:
@@ -51,8 +55,54 @@ RELACIONAMENTOS
 	n pra n: 
 
 COMANDOS SQL
+	
+	COMENTÁRIO: linhas ignoradas para deixar comentarios explicando 
+		/**/: varias linhas
+		--  : uma linha 
 
-	Insert:
+	TRANSACTION:
+		BEGIN: inicia a transaction
+			query
+		COMMIT: executa a query se for tudo certinho 
+		ROLLBACK: cancela a query
+
+
+	INSERT: Adiciona valores em uma tabela
+		insert into NOME_TABELA 
+		( coluna_1_a_inserir, coluna_2_a_inserir ...) 
+		values (valor_da_coluna_1, valor_da_coluna_2)
+
+	UPDATE: Atualiza valores em uma tabela
+		update NOME_TABELA 
+		set COLUNA_A_MUDAR = NOVO_VALOR
+		where COLUNA_DO_IDENTIFICADOR = VALOR_DO_IDENTIFICADOR
+
+	DELETE: Deleta valores em uma tabela
+		delete from NOME_TABELA
+		where COLUNA_A_DELETAR = VALOR_DO_IDENTIFICADOR
+
+
+	SELECT: Seleciona linhas em uma tabela
+	select coluna_1, coluna_2
+	from NOME_TABELA
+
+		AS: podemos definir o nome que vai aparecer no result set, utilizando o as
+		 	select coluna_1 as NOVO_NO_RESULT_SET
+
+		podemos até colocar informações que não estão em tabelas, como a hora atual, ou até mesmo
+		umas soma
+			select coluna_1, CURRENT_TIME as "HORA" ...
+
+	JOINS: Serve pra juntas tabelas em operacoes sql
+
+		INNER JOIN: O join padrao.
+		select * from TABELA1 as t1 JOIN TABELA2 as t2
+		ON t1.codigo = t2.codigo_tabela_1
+
+			ON -> como se fosse um where no join, pra definir que colunas pegar na segunda tabela
+
+
+
 
 		
 
