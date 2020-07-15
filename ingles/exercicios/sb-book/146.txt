@@ -1,0 +1,47 @@
+1a
+
+2 competitive   - neutral
+3 selfish       - bad
+4 aggressive    - bad
+5 charming      - good
+6 sensible      - good
+7 sociable      - good
+8 manipulative  - bad
+9 moody         - bad
+10 independent  - neutral
+11 bossy        - bad
+12 affectionate - good
+13 reliable     - good
+14 sensitive    - neural
+15 ambitious    - good
+16 jealus       - bad
+
+2
+
+clever - stupid
+generous - mean
+insecure - self confident
+lazy - hard working
+quiet - talkative
+shy - extrovert
+
+3
+
+un
+    unfrindly
+    unimaginative
+    unkind
+    unreliable
+    unselfish
+    unsociable
+    untidy
+
+
+dis
+    dishonest
+    disorganized
+
+in/im/ir
+    impatient
+    irresponsible
+    insensitive

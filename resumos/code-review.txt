@@ -30,6 +30,7 @@ TO DO
         - Map retornando array de props
         - yield x await
         - generator function
+        - function*
 
     Padrões
         - template method
