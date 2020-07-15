@@ -10,8 +10,8 @@ difficult
 
 c-
 E
-B
 C
+B
 A
 D
 
