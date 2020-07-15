@@ -28,7 +28,7 @@
     4   mean
     5   unfriendly
     6   unkind
-    7   unpatient
+    7   impatient
     8   altruistic
 
 2
