@@ -30,6 +30,7 @@ TO DO
         - Map retornando array de props
         - yield x await
         - generator function
+        - function*
 
     Padrões
         - template method
@@ -37,6 +38,7 @@ TO DO
 
     TYPESCRIPT
         - NULL|UNDEFINED
+        -
 
 
 - Técnicas para fazer o PR
@@ -47,16 +49,17 @@ TO DO
 - Performace
     - Quando se importar com performace?
         Sempre bom olhar performance, principalmente código que seja fácil mudar que gere performance muito melhor
-        - Ficar atento a Big One Notation
+        - Ficar atento a Big O Notation
         - Códigos poucos performáticos deixar mal exemplo
             ex: Mal uso de uma estrutura de dados
         - Melhor fazer algo generico do que único
             ex: Apis prontas para fazer book(retornar várias instâncias) em vez de uma única instância
         - Se preocupar com quantidades retornadas, usar paginação para evitar sobre carga
         - Sempre extrapolar pro pior cenario q temos hoje
-            ex: Em produção vagas com mais de um milhão de candidatos, mas em staging não tinhamos nada do tipo. Logo em staging
-            nao quebraria nenhum teste, mas em produção sim.
+            ex: Em produção vagas com mais de um milhão de candidatos, mas em staging não tinhamos nada do tipo.
+            Logo em staging nao quebraria nenhum teste, mas em produção sim.
         - Map/reduces retornando array de promises
+
 
 
 - Organização/Clareza
@@ -65,7 +68,7 @@ TO DO
     - Conferir typos
     - metodo tem resposabilidade só
     - nível de abstracao certo
-    - Seguir principios de SOLID
+    - Seguir principios de SOLID quando usando POO
 
 
 - Padrões

@@ -1,0 +1,27 @@
+Plataforma global de armazenamento
+Baseado e resiliente regionalmente -> Tem que escolher onde essas informações(bucket) vao ficar. (eua, br)
+Armazenamento de objetos, nao de arquivos ou blocos
+Ideal para dados estáticos (fotos, video, textos ...)
+Públic e ilimiteado
+Compostos de bucketes e objetos
+
+O que é um bucket:
+    Parece muito um diretório
+    Tem um nome único globalmente
+    Tem estrutura flat, salva com o nome completo passado. Na interface mostra pastas, mas na real nao tem pastas.
+    soft limite de 100 buckets por regiao. Se pedir, consegue aumentar
+    hard lmite de 1000 por regiao
+
+Objetos
+    Key = nome
+    value = conteudo
+    tamanho de 0bytes até 5tb
+
+SEGURNÇA s3
+    público por padrão -> CONTECTIVIDADE: tem como conectar pela internet
+    privado por padrao -> PERMISSÃO: precisa dar ativamente uma permissao pra dar acesso
+
+
+politica de recursos é atrelada ao bucket
+
+

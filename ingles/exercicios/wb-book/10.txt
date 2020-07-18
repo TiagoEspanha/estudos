@@ -1,0 +1,62 @@
+1a
+
+2 grant grandmother
+3 cousin
+4 haft sister
+5 brother in law
+6 couple
+7 mother in law
+8 grand grand grandfather
+9 stepfather
+10 only child
+
+1b
+    2   pacient
+    3   lazy
+    4   reliable
+    5   affectionate
+    6   organized/bossy
+    7   sociable/extrovert
+    8   shy
+    9   sensitive
+    10  bossy
+
+1c
+    1   stupid
+    2   disonest
+    3   quiet
+    4   mean
+    5   unfriendly
+    6   unkind
+    7   impatient
+    8   altruistic
+
+2
+    2 each other
+    3 ourselves
+    4 each other
+    5 himself
+    6 yourself
+    7 themselves
+
+3
+    1 f
+    2 f
+    3 t
+    4 t
+    5 f
+    6 f
+    7 f
+    8 f
+
+b
+    the cliffs penhascos
+    rough - duro, dificil,
+    wetsuit - roupa de mergulho
+    balance - equilibrar
+    sail - vela
+    take up - comecar
+    shetchbook - caderno de rascunho
+    talent - talento
+    improvemnet - melhora
+    stuff - coisa
