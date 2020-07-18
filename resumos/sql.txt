@@ -82,7 +82,9 @@ COMANDOS SQL
 		where COLUNA_A_DELETAR = VALOR_DO_IDENTIFICADOR
 
 
-	SELECT: Seleciona linhas em uma tabela
+	SELECT: Pode seleciocar COLUNAS, CONSTANTES ou resultado de FUNÇÕES 
+
+	Seleciona linhas em uma tabela
 	select coluna_1, coluna_2
 	from NOME_TABELA
 
@@ -94,6 +96,8 @@ COMANDOS SQL
 			select coluna_1, CURRENT_TIME as "HORA" ...
 
 	JOINS: Serve pra juntas tabelas em operacoes sql
+		
+		referencia: https://terminalroot.com.br/2019/10/inner-join-left-join-right-join-mysql.html
 
 		INNER JOIN: O join padrao.
 		select * from TABELA1 as t1 JOIN TABELA2 as t2
@@ -103,6 +107,12 @@ COMANDOS SQL
 
 
 
+
+	FUNCOES SQL
+	https://www.postgresql.org/docs/11/functions.html
+
+	coalesce: retorna primeiro valor nao nulo dos passados
+	avg: média de valores
 
 		
 
