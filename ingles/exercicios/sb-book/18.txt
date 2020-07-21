@@ -6,9 +6,9 @@ Grammar
 
     hit
     was driving
-    has change
+    had change
 
-    going to meet
+    am meeting (PRESENT PERFECT) -> COMPROMISSO
     finish
 
     pick u up
@@ -28,18 +28,18 @@ vocabulary
 
     b
         1   spicy
-        2   appetizer
+        2   starters / appetizer
         3   draw
-        4   injured
-        5   stepmother
+        4   INjured
+        5   stepfather
         6   selfish
-        7
+        7   mean
 
     c
-        1   rare out
+        1   for rout
         2   for
         3   up
-        4
+        4   ON
 
 
 Pronunciation

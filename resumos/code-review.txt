@@ -2,7 +2,7 @@ CODE REVIEW
 
 DICAS GERAIS
     - Dar o máximo de informação PERTINENTE em mensagens de erro
-    -
+    - pensar o que acontece quando um servico cair - tolerancia a erro
 
 TO DO
     Geral:
