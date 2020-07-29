@@ -1,0 +1,38 @@
+1
+    nice
+    welcome
+    meet
+    introduce
+    how
+    heard
+    this
+    meet
+    jornay
+
+2
+    1   e
+    2   d
+    3   a
+    4   f
+    5   b
+
+3
+    1   be
+    2   dress
+    3   learn
+    4   ask
+    5   take
+    6   work
+    7   keep
+
+b
+
+    a   3
+    b   4
+    c   2
+    d   5
+    e   6
+    f   1
+    g   7
+
+
