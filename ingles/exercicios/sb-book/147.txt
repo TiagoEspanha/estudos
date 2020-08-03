@@ -1,0 +1,36 @@
+1
+    1   inherit
+    2   save
+    3   borrow
+    4   lend
+    5   spend
+    6   cant afford
+    7   carged
+    8   got
+    9   cost
+    10  owe
+    11  investe
+    12  earn
+    13  worths
+
+2
+    1   for
+    2   back
+    3   in in
+    4   on
+    5   to
+    6   from
+    7   to
+
+3
+    1   note
+    2   coin
+    3   salary
+    4   tax
+    5   loan
+    6   mortgage
+    7   mash machine
+
+
+
+
