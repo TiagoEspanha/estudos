@@ -1,0 +1,26 @@
+Evaluar -
+overloading || overwritting
+
+const x let x var
+
+criar tipo com type
+
+tipagem generica - exemplo array<number>
+
+
+Funções funcionais?
+    map
+    filter
+    reduce
+    concat
+
+retipagem
+
+for in em array devolve a key, nao o valor
+
+dever de casa
+
+- forEach(array, func)
+- reduce(array, func(acc, elemento, index))
+https://repl.it/join/ggrztgxn-igorsantana2
+
