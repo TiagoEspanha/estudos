@@ -9,7 +9,7 @@ Passado:
 present perfect e past simples
 
 Present perfect
-    - definicao: Coisas que ainda tem ligação com o presente.
+    - definicao: Coisas que ainda tem ligação com o presente ou
     acao acabada e tempo acabado
     Experiencias:J haa fez algo na vida?
     Comecou no passado e nao acabou ainda:
@@ -18,6 +18,16 @@ Present perfect
     adverbios: vem no meio dos verbos.
         ex: she has NEVER met his ex-wife
         excessao: YET, vem depois dos verbos
+
+    Just
+    Ever
+    Already
+    Never
+    Yet
+
+    Since
+    For
+
 
 past simples
     - definicao: Quando a acao ja acabou e nao tem ligacao com o presente

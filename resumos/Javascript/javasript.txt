@@ -6,3 +6,14 @@ tipos de variaveis
     const - It does not means that the value cant change. Kind confusing and i disagree. The variable value is constant, but when the value is
     a reference to the memory, like a object, the attributes can change. Another point is when used on a function, the value on the function
     will be the reference to the object, not a copy of it
+
+
+
+NPM
+    forma de pegar modules
+        file:
+        repository:
+        git:
+
+    package.json
+    package-lock.json

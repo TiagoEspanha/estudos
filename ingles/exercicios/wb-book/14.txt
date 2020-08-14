@@ -1,0 +1,45 @@
+1
+a
+    1   lend
+    2   wasted
+    3   afford
+    4   charged
+    5   pay back
+    6   earns
+    7   borrow
+    8   inherited
+
+b
+    1   take out
+    2   salary
+    3   charge
+    4   save
+    5   cost
+    6   loans
+    7   mortgages
+    8   tax
+
+c
+    1   from
+    2   to
+    3   for
+    4   on
+    5   in/by
+
+2
+a
+    1   his
+    2   lets
+    3   each other
+    4   makes
+    5   cash
+    6   join
+    7   afford
+    8   fill in
+    9   monthly
+    10  wait for
+b
+    1
+    2
+    3 check
+
