@@ -70,6 +70,18 @@ Build-in vars
 	- delta 	- Tempo decorrido entre um frame e outro. Utilizado para padronizar "COISAS" chamadas no _process.
 
 Keywords
-	class_name  - 
+	class_name  - Chama a funcao no objeto durante o idle time 
+
+
+call_deferred 	- 
+
+FUNCOES NETWORK
+
+RPC 
+	MASTER -> peer que é o servidor do jogo, que criou
+
+	remote 		- envia para todos os peer menos eu 
+	remotesync 	- enviar para todos os peers, inclusive eu
+	puppet 		- envia para todos os peers menos o master 
           
 

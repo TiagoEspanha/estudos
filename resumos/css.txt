@@ -1,0 +1,51 @@
+Onde declarar:
+	- Podemos colocar css no header, ou podemos colocar linkar um arquivo css para ele ou colocar inline no tag. 
+O último css a ser chamado é o que vale, então o inline é o que prevalece.
+
+Seletores:
+	- .{nome da classe} : Seleciona elementos por classe
+	- #{nome do ID} : Seleciona elemento por seu id
+	- {pai} > {filho} : Seleciona apenas os filhos diretos do elemento pai
+	- {seletor1} , {seletor2} : inclui outro seletor, pra nao ter que fazer 2 vezes o mesmo estilo
+	
+	- 
+
+Propriedades:
+	- width: Define a largura de um elemento. Não funciona em elementos inline
+	- height: Define a altura de um elemento. Não funciona em elementos inline
+	- font-size: 
+		propriedade: px, keyword(small, large), % (porcentagem do default), em
+	- color
+	- border: px, keyword(solid)
+
+Display values
+	ref:https://www.w3schools.com/html/html_blocks.asp */
+
+	Todo elemento html tem um display padrao. São eles
+	Inline:  
+		- Não começa numa nova linha, e só pega o espaço horizontal necessário
+	Block:
+		- Elemento que sempre começa numa nova linha e utiliza todo espaço horizontal 
+ 
+	Também temos valores de display que não são padrões, como:
+
+	inline-block: Permite usar as propriedades width e height, mas continua os elementos continuam na mesma linha  
+
+Specificity:
+	ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+	
+	É o que de qual estilo será aplicado no elemento. Quanto mais especifico, mais prioridade o estilo terá
+	Ordem de especificidade
+
+		inline
+		id
+		element > class
+		class
+		element > element2
+		element
+
+		ID selectors (e.g., #example) >
+		Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover). >
+		Type selectors (e.g., h1) and pseudo-elements (e.g., ::before) 
+
+		Universal selector (*), combinators (+, >, ~, ' ', ||) and negation pseudo-class (:not()) have no effect on specificity
