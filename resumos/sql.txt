@@ -105,6 +105,20 @@ COMANDOS SQL
 
 			ON -> como se fosse um where no join, pra definir que colunas pegar na segunda tabela
 
+	WITH -> declarar selects cm variaveis
+
+		with empresas as (
+			select 
+				c.id
+			from 
+				companies c
+			)
+
+		select * from empresas
+
+
+	WITH RECURSIVE
+ s
 
 
 
@@ -112,8 +126,10 @@ COMANDOS SQL
 	https://www.postgresql.org/docs/11/functions.html
 
 	coalesce: retorna primeiro valor nao nulo dos passados
-	avg: média de valores
-
-		
+	min: valor min
+	man: valor max
+	avg: media
+	count: quantidade de linhas
+	sum: soma dos valores
 
 
