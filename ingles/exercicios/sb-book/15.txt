@@ -5,3 +5,35 @@
 5 eachohter
 6 myself
 
+6
+    b
+        oldest
+            self-confident
+            ambicius
+            responsible
+            bossy
+            aggresive
+            very wariedle
+
+        middle
+            competitive
+            indepented
+            sociable
+            jealus
+            moody
+
+        youngest
+            charming
+            affectione
+            relaxed
+            lazy
+            manipulative
+
+
+        only
+            spoilt
+            selfish
+            orginized
+            imaginative
+            responsible
+
