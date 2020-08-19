@@ -20,7 +20,9 @@ for in em array devolve a key, nao o valor
 
 dever de casa
 
-- forEach(array, func)
-- reduce(array, func(acc, elemento, index))
+- FEITO forEach(array, func)
+- FEITO reduce(array, func(acc, elemento, index))
+- implementar DeepPartial (olhar & e |)
+- Encontrar um caso de uso que mostre a diferença do exclude para o Omit
 https://repl.it/join/ggrztgxn-igorsantana2
 
