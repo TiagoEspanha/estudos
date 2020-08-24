@@ -1,0 +1,13 @@
+O que é Typescript:
+	Criadopela microsoft
+	Typescript = JS + [TIPAGEM] 
+	Então é a mesma coisa? Devemos programar da mesma forma? 
+	Não é exatamente isso. 
+
+
+Porque usar Typescript:
+	- Ajuda o desenvolvimento, capturando erros durante o desenvolvimento. Não precisa executar o código pra pegar alguns tipos de erro.
+
+	- Quase como uma documentação do código, mostrando como deve-se usar os métodos e que tipos de valores estão passando de lá pra cá no código.
+
+	- No caso de TYPESCRIPT, nao melhora performace, pois traduz pra JS. Imagino que no DENO, isso seja diferente.
