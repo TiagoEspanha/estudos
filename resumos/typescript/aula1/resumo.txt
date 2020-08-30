@@ -14,8 +14,8 @@ Como usar Typescript:
 
 	Instalar: 
 
-	Compilar:
-		compilar x transpilar:
+	Como Compilar:
+		
 
 	Tipagem:
 		O que é um tipo: "Forma fácil de referir que propriedades e métodos um valor possuí"
