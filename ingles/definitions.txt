@@ -1,0 +1,3 @@
+definitions.txt
+
+adverbs (Adverbios): Palavras que modificam o verbo, podendo ser de modo, intensidade, lugar, tempo, negação, afirmação, dúvida, etc...

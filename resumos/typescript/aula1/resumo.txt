@@ -120,3 +120,43 @@ tipando arrays: Bom usar porque ajuda na inferencia
 	Syntax + Features
 
 	Design patterns with TS
+
+	type x interface 
+		https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types#:~:text=Unlike%20a%20type%20alias%2C%20an,of%20all%20declarations%20being%20merged).&text=One%20difference%20is%20that%20interfaces,name%20that%20is%20used%20everywhere.
+		https://jameshenry.blog/typescript-classes-vs-interfaces/
+
+	modificadores
+		public		- pode ser chamado em qualquer lugar
+		private		- pode ser chamado por metodos da classe
+		protected	- pode ser chamado por metodos da classe e por seus 'filhos'
+
+1- O que é Typescript e Porque usar:
+
+2 - Como usar Typescript:
+	Instalar:
+	complilar:
+	compilar x transpilar:
+	
+
+3 - O que é Tipagem:
+	exemplos de tipos de tipo primitivo
+		tipando variaveis soltas
+
+	exemplos de tipos de object type
+		tipando array
+  		tipando funcoes
+  		tipando objetos
+
+	primitivos x object type:
+
+
+4 - Inferecia de tipo
+	Type annotation x type inference
+
+
+  
+as
+&&||
+tipo utilitarios
+private public protected
+-- Tipos especiais de tipagem -- nao terminei essa
