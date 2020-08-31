@@ -1,13 +1,9 @@
 /*O que é Typescript:
 	- Criado pela microsoft em 2012 LOL
-	- Typescript = JS + TIPAGEM + algumas coisinhas
+	- Typescript = JS + TIPAGEM
 	- Mas o desenvolvimento é diferente 
 
 	Typescript é transpilado para javascript, podemos decidir qual versão de js
-	Transpilado e compilado são bem parecidos. Pelo o que eu entendi, transpilar é um tipo
-	de compilação, mas com proposito difernete. Compilar é transformar um código fonte 
-	um código mais baixo nível, normalmente em linguagem de máquina.
-	Transpilar é passar de um código fonte pra outra linguagem ou dialeto do mesmo nível.
 
 
 Porque usar Typescript:

@@ -1,7 +1,7 @@
 //Type annotation x type inference
 //Type annotation: Quando nos definimos o tipo de um valor. 
 
-let tipoAnotado: number = 2;
+let tipoAnotado = 2;
 console.log(typeof tipoAnotado); // number
 //tipoAnotado = 'lala';
 
@@ -11,9 +11,6 @@ console.log(typeof tipoAnotado); // number
 let tipoInferido = 2;
 console.log(typeof tipoInferido); // number
 //tipoInferido = 'lala';
-
-//Vi algumas referencias que não devemos usar a anotação do tipo sempre, pois acaba sendo 
-//código reduntante, pois o tipo já é definido automáticamente
 
 //Sempre devemos definir o tipo quando o compilador não consegue inferir
 //1º caso - Quando uma funcao retornar o tipo ANY
@@ -35,16 +32,27 @@ function subtracao(a: number, b: number): number{
 	//return a.toString();
 }
 
-s//ubtracao(2,1);
+//subtracao(2,1);
 //subtracao('lala', 'a');
 
 
-function soma(a, b){
+function soma(a: number, b: number){
 	return a+b;
 }
 
 console.log(soma(2,1));
 console.log(soma('ala', 'a'));
+
+//Type assertion
+//Temos situações que sabemos melhor que o compilador que tipo x valor deve ter. 
+//Podemos dizer para ele o tipo do valor
+//
+
+let someValue: number = 1;
+((someValue as unknown) as string)
+
+
+
 
 
 
