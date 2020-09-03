@@ -51,7 +51,7 @@ A
 		present perfect continuos with repeated actions with expressions all day
 	4	-	he hasnt seen - because its a experience, and the time of the action isnt over yet.
 	5	-	I HAVE NEVER MET - 
-	6	-	we have been studing - because the emphasis of the phase is on the continuity of it
+	6	-	both - we have been studing - because the emphasis of the phase is on the continuity of it
 	7	-	i have been tidying - 
 	8	-	he has just left - action is finished 
 	9	-	have u had
@@ -62,8 +62,8 @@ B
 	2	-	have u been running - focus on continuity 
 	3	-	hasnt finished 
 	4	-	have moved
-	5	-	they have been going out
-	6	-	havent have 
+	5	-	have they been going out
+	6	-	havent had
 	7	-	have been walking
 	8	-	Have u been eating 
 
@@ -76,7 +76,7 @@ C
 	5	-	since last october
 	6	-	check
 	7	-	did u wake up - because the time and the action are finish
-	8	-	they only have known each other - because the action still going
+	8	-	they have only known each other - because the action still going
 
 
 D
@@ -88,7 +88,7 @@ D
 	5	-	have moved out
 	6	-	have been living
 	7	-	have already unpacked 
-	8	-	have splited up
+	8	-	have split up
 	9	-	has been traveling
 	10 	-	havent managed 
 	11	-	have met
