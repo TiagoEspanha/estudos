@@ -1,0 +1,46 @@
+Flags
+    i - ignora maiscula e minuscula
+    g - pega todas as ocorrencias, sem ela so encontra a primeira e para
+
+    | - OU
+
+Caracteres
+
+    /   - escape pra entrada de literal,
+    .   - coringa, pega qualquer char
+
+    [^] - conjunto de chars nao permitidos
+
+    \u  - unicode
+
+Conjuntos:
+    []  - conjunto de chars permitidos, nao importa a ordem dos chars dentro
+        o char '-' é reservado dentro do conjunto, pŕecisa escapar ele pra ser cm literal,
+    mas
+        metas chars (.$+*?) sao chars normais dentro do conjunto
+Interfalos:
+    [a-z] - tras todos os valores entre os dois valores, inclusive as bordas. Baseado na tabela ASCII
+2
+
+Atalhos
+    \d  - conjunto 0 a 9 [0-9]
+    \D  - nao numeros [^0-9]
+    \w  - conjunto de letras e numeros[a-zA-Z0-9]
+    \W  - tudo que não é letras e numeros [^a-zA-Z0-9]
+    \s  - espaços, pega tab tb
+    \t  - tabs, pega apenas tabs
+
+Quantificadores
+    ?           - opcional, zero ou um {0,1}
+    *           - zero ou mais
+    +           - um ou mais
+    {min, max}  -
+
+funcoes em js
+
+    test    - retorna boleano
+    exec    - executa e mostra o que encontrou incluindo o index
+    match   - devolve em array as partes do texto que bateu com o regex
+    search  - retorna o index, o primeiro que encontra
+    reclace - Se encontra o uqe esta na expressao regular, troca pelo segundo parametro
+    split   - Separa em array a partir do aceitar
