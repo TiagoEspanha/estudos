@@ -22,7 +22,7 @@
 
     C
         2   has been going
-        3   have been working
+        3   both
         4   has been spleeping
         5   both
         6   have been loking
