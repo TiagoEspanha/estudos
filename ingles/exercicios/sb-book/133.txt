@@ -1,0 +1,13 @@
+2b
+    a
+        1   for how long have they been going out together
+        2   i have been studying English for two year
+        3   he hasnt been feeling very well recently
+        4   you have been reading this book for months
+        5   have u been waiting for a long time?
+        6   we havent been spending much time together
+        7   For how long has she been living there?
+        8   I have been renting this flat for three years
+        9   The lift hasnt been working since 10 o clock
+        10  has she been working here for a long time?
+

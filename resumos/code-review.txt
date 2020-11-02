@@ -29,16 +29,17 @@ TO DO
         - require, import from
         - Map retornando array de props
         - yield x await
-        - generator function
-        - function*
+        - generator function (function*)
+
+    TYPESCRIPT
+        - Type x interface
+        - NULL|UNDEFINED
 
     Padrões
         - template method
         - strategy
 
-    TYPESCRIPT
-        - NULL|UNDEFINED
-        -
+
 
 
 - Técnicas para fazer o PR
