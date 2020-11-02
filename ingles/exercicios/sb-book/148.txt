@@ -1,0 +1,51 @@
+1
+	1 	- baggage reclaim
+	2 	- checkcin desk /
+	3 	- suit case
+	4 	- gate
+	5 	- boarding card pass
+	6 	- land
+	7 	- take off
+	8 	- luggage
+	9 	- aisle
+
+	10	- ticket office
+	11 	- railway station
+	12 	- the underground
+	13 	- plataform
+	14 	- carriage
+
+	15 	- coach
+	16 	- motorwat
+	17 	- bike
+	18 	- van 
+	19 	- lorry
+	20 	- car
+	21 	- helmet
+	22 	- motorbike
+	23 	- tram
+	24 	- scooter
+
+
+	b
+		1	- petrol station
+		2	- traffic lights
+		3	- seat belt
+		4	- rush hour
+		5	- car crash
+		6	- parking fine
+		7	- traffic jam
+		8	- speed limit
+		9	- public transport
+		10	- pedestrian area
+		11	- cycle lane
+		12	- road works
+		13	- taxi rank
+		14	- car park
+
+4
+
+	1	-	journey
+	2	-	travel
+	3	-	flight
+	4	-	trip
