@@ -43,3 +43,35 @@ b
     2
     3 check
 
+
+4
+    a
+        2   four and a quarter
+        3   eight hundred and forty nine
+        4   one thousand five hundred
+        5   six point seventy three
+        6   nought point five
+        7   two and a half
+
+    b
+        2   nine hundred and ninety nine
+        3   fourteen and a half 
+        4   two thirds
+        5   one and a half
+        6   three thousand eight hundred and fourty two
+        7   two and a half million dollares
+        8   zero point seven per cent
+
+
+MORE WORDS TO LEARN
+
+    pertences
+    pasta de dente
+    saudavel
+    dar
+    desistir
+    ter
+    arrumar/criar/configurar
+    jogar fora
+    aparecer
+    tirando esse caso
