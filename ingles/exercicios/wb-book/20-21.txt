@@ -1,0 +1,51 @@
+1
+    a
+    1 - aerosur
+    2 - bus
+    3 - at night
+    4 - no
+    5 - slow, uncomfortable, and is freezing
+    6 - yes
+    7 - because its slow
+
+    b
+    1 -
+    2 - drop
+    3 - in advance
+    4 - main
+    5 - option
+    6 - cargo
+    7 - scheduled
+    8 - available
+
+2
+    1 -
+    2 - long take
+    3 - takes
+    4 - took
+    5 - long take get
+    6 - took get
+
+3
+
+    1   -
+    2   - much cheaper
+    3   - the same skirt as
+    4   - drives more slowlier than
+    5   - as hard as
+    6   - taller than me
+    7   - the most intelligent
+    8   - the hottest day
+    9   - worst
+    10  - the most boring
+
+b
+
+    1
+    2
+    3
+    4
+    5
+    6
+
+

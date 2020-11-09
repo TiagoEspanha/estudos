@@ -11,3 +11,10 @@
         9   The lift hasnt been working since 10 o clock
         10  has she been working here for a long time?
 
+    b
+        1   have u been crying. have been watching
+        2   has been barking
+        3   havent been spleeping
+        4   have been shopping
+        5   what have u been doing - i have been playing
+

@@ -1,0 +1,61 @@
+Grammar
+    a
+
+        1   already
+        2   long since
+        3   have yet
+
+    b
+
+        1   been woking
+        2   just made
+        3   more expensive
+        4   carefull as
+        5   the most
+
+Vocabulary
+
+    a
+        1   bank
+        2   mortgage
+        3   hungry
+        4   awful
+        5   flight
+        6   helmet
+        7   railway station
+
+    b
+        1   filfy
+        2   tax
+        3   rush hour
+        4   lend
+        5   platform
+        6   inheritance
+        7   boarding pass
+        8   tiny
+
+    c
+
+        1   off
+        2   out
+        3   for
+        4   back
+        5   by
+
+Pronunciation
+    a
+        1   coach
+        2   tiny
+        3   charge
+        4   cycle
+        5   earn
+
+    b
+        inVEST
+        seCUrity
+        LUggage
+        peDEStrian
+        TErrified
+
+
+

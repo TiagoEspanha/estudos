@@ -1,0 +1,25 @@
+2c
+    a
+        1   - as
+        2   - the
+        3   - than
+        4   - ever
+        5   - in
+        6   - most
+        7   - as
+        8   - more
+        9   - as
+        10  - him
+
+    b
+
+        1   - hotter
+        2   - the most competitive
+        3   - the laziest
+        4   - better
+        5   - the most boring
+        6   - earlier
+        7   - the worst
+        8   - the most ambitious
+        9   - safest
+        10  - farther
