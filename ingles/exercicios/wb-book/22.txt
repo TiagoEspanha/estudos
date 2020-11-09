@@ -1,0 +1,13 @@
+4
+	1	- 
+	2	- railway station 
+	3	- parking fine
+	4	- boarding card pass
+	5	- ticket
+	6	- limits
+	7	- petrol
+	8	- land
+	9	- journey
+	10	- gate
+	11	- luggage
+	12	- aisle
