@@ -1,0 +1,28 @@
+SOCIAL ENGLISH
+    a
+        1   allie
+    b
+        1   true
+        2   true
+        3   false
+        4   false
+        5   false
+        6   true
+
+    c
+        loking
+        yet
+        just
+        how
+        heart
+        let
+        have
+
+    d
+        vc ja comecou a procurar um apartamento
+        ainda nao tive tempo
+        um minuto
+        ta gostando do trabalho?
+        vc conheceu a isabela
+        me deixa te pagar uma bebida
+        obrigado, eu quero uma coca ligth

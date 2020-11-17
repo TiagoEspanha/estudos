@@ -1,0 +1,39 @@
+1
+    a
+        2   call
+        3   use
+        4   sending (DPS DE MIND TEM QUE TER ING)
+        5   take
+        6   helping
+
+    b
+        1 - 6
+        2 - 3
+        3 - 2
+        4 - 5
+        5 - 4
+        6 - 1
+
+2
+    1   started
+    2   heart
+    3   Just
+    4   let
+    5   how
+
+3
+    a
+        2   like it
+        3   like it
+        4   dont like it
+        5   dont like it
+        6   dont like it
+
+    b
+        2   luke
+        3   helen
+        4   joseph
+        5   aaron
+        6   graham
+
+
