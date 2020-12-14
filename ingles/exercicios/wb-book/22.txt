@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 22.txt
 
 4
@@ -13,3 +14,18 @@
 	10
 	11
 	12
+=======
+4
+	1	- 
+	2	- railway station 
+	3	- parking fine
+	4	- boarding card pass
+	5	- ticket
+	6	- limits
+	7	- petrol
+	8	- land
+	9	- journey
+	10	- gate
+	11	- luggage
+	12	- aisle
+>>>>>>> f8bda057b0c7d3e32d6975c3af6672ee6d7f7657
