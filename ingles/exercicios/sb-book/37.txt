@@ -34,17 +34,17 @@ wb 24
 			6 f
 
 		b
-			although - apesar
+			although - embora
 			however - entretando
 			for example - por exemplo
-			as well as - como também
+			as well as - assim como
 			so that - para que
 
 		c
 			1
-			2
+			2 as well as 
 			3 however
-			4 so that
+			4 so that	
 			5 although 
 
 		d
