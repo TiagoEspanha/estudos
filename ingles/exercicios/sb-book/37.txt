@@ -5,12 +5,12 @@
 
 	3a
 
-		1 dont have to 
-		2 MUST	
+		1 dont have to
+		2 MUST
 		3 did not have  to pay
 		4 do u have to
 		5 had
-		6 did u have to 
+		6 did u have to
 		7 should not
 		8 must not
 
@@ -45,32 +45,11 @@ wb 24
 			2
 			3 however
 			4 so that
-			5 although 
+			5 although
 
 		d
 
 
-wb 25
-	a
-		2	both
-		3	must
-		4	both
-		5	dont have to pay
-		6	dont have
-		7	should
-		8	must not
-		9	should not
-		10	should 
-
-	b
-
-		2 take a rest
-		3 eb will speak 	 
-		4 
-		5 
-		6
-		7
-		8
 
 
 
