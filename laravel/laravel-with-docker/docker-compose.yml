@@ -1,0 +1,99 @@
+version: '3'
+#Define uma camada de network, para podermos isolar os diversos servicos
+networks: 
+  laravel:
+
+services: 
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    ports:
+      - 8088:80
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - mysql
+    working_dir: /var/www/html 
+    networks:
+      - laravel
+
+  php:
+    # Quando queremos montar nossa imagem de um dockerfile local
+    build: 
+      context: .
+      dockerfile: php.dockerfile
+    container_name: php
+    # Define qual porta do container se comunica com a porta local/exterior
+    # porta-externa:porta-container
+    ports:
+      - "9000:9000" 
+    # É como se fosse um link simbolico (symlink) do computador local ao container
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html 
+    networks:
+      - laravel
+
+  mysql:
+    # Define qual docker image será usada como base
+    image: mysql:5.7.22
+    container_name: mysql
+    restart: unless-stopped
+    ports: 
+      - "3306:3306"
+    # Não é necessario aqui, somente se quisermos que o conteudo do banco seja salvo quando o servico for desligado
+    # path-local:path-container
+    volumes:
+      - ./mysql:/var/lib/mysql
+    # Variaveis de ambiente
+    environment:
+      MYSQL_DATABASE: homestead
+      MYSQL_USER: homestead
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+    networks:
+      - laravel
+
+  composer:
+    image: composer:latest
+    container_name: composer
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    networks:
+      - laravel
+
+  npm:
+    # Ver onde achar a melhor versão para o Laravel 
+    image: node:13.7
+    container_name: npm
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    # Define o comando usado quando o docker-compose roda o comando run no container
+    # Por padrão é o nome do container, 
+    entrypoint: ['npm']
+    networks:
+      - laravel
+
+  artisan:
+    build:
+      context: .
+      dockerfile: php.dockerfile
+    container_name: artisan
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - mysql
+    working_dir: /var/www/html
+    # Artisan nao roda globalmente no container, precisamos apontar qual artisan queremos rodar
+    # No caso, o do nosso projeto
+    entrypoint: ['php', '/var/www/html/artisan']
+    networks:
+      - laravel
+  
+ 
+
+  
