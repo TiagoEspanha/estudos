@@ -1,0 +1,57 @@
+3 
+
+	a
+		2	fringe
+		3	look
+		4	bold
+		5	overweithg
+		6	mid
+		7	gray
+		8	tail
+		9	slim
+		10	wavy
+
+	b
+		2	eary
+		3	height
+		4	thin / fit / well build
+		5	short
+		6	curly
+		7	fair
+		8	beard
+		9	mustache
+
+		10	twenties
+		11	short
+		12	overweithg
+		13	long
+		14	straigh
+		15	
+
+
+
+2	g
+3	a
+4	d
+5	j
+6	c
+7	f
+8	e
+9	b
+10	h
+
+
+1	might
+2	cant
+3	must
+4	must
+5	cant
+6	cant	
+7	must
+
+4
+
+	light
+	neighbour
+	staight
+	bright
