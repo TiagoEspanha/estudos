@@ -1,0 +1,30 @@
+4 -
+    a
+        1
+        2 should / call
+        3 mustnt / pavement
+        4 shouldnt / two / a day
+        5 really
+        6 dont have / to play
+        7 had
+
+    b
+        1
+        2   mustnt
+        3   shouldnt
+        4   busy
+        5   mobile
+        6   message
+
+
+More words to learn
+
+1 - convidados
+2 - nojento
+3 - maluco
+4 - reclamar
+5 - fazer um favor
+6 - servir uma bebida
+7 - pisar no
+8 - engolir
+9 - traduzir
