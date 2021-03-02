@@ -10,8 +10,8 @@
     b
         2   may rain
         3   cant have
-        4   must be
-        5   migth come 
+        4   must feel
+        5   migth come/be 
         6   cant be
         7   must earn
         8   cant be
