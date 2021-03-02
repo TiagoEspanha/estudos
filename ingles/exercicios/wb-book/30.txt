@@ -1,0 +1,36 @@
+1
+    a
+        1
+        2   couldt
+        3   can
+        4   has been able to
+        5   to be able
+        6   couldnt
+        7   will be able to
+
+    b
+        1
+        2   must be able to
+        3   both
+        4   we ll be able to go, mayb both because its close future
+        5   havent been able to
+        6   used to be able to
+        7   would be able to/ could
+        8   not being able to
+        9   both
+        10  both
+        11  been able to
+        12  to be able to
+
+2
+
+    a
+        1
+        2   able play well
+        3   can ski better
+        4   werent find restaurant
+        5   meet family
+        6   cant understand says
+        7   meet center
+        8   able travel often
+

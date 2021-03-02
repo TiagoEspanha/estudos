@@ -1,0 +1,41 @@
+4
+    a
+        2
+        3
+        4   exciting
+        5   embarrassed
+        6
+        7   interested
+        8
+
+    b
+        2   tired
+        3   worrying
+        4   boring
+        5   exited
+        6   interesing
+        7   depressing
+        8   embarrassed
+
+
+5
+    2   c
+    3   a
+    4   e
+    5   f
+    6   b
+
+More words to learn
+
+onda
+maravilhado
+determinado
+devidamente
+continue
+desista
+melhorar
+conseguiu fazer algo
+gritar
+comecar algo rotinamente
+
+
