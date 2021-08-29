@@ -1,0 +1,52 @@
+Case Seguradora
+
+	Uma seguradora está tendo muitos prejuízos com sinistros pagos indevidamente aos seus
+segurados. Existem razões diferentes para sinistros serem pagos indevidamente. Porém, os
+segurados podem ser forçados através de um recurso a devolver o dinheiro que receberam
+indevidamente da seguradora. Então, ela gostaria de aperfeiçoar os seus processos visando
+aumentar a taxa de recuperação através de recursos.
+	
+	• Se um segurado puder sofrer um recurso, o analista de riscos é notificado por e-mail
+pelo sistema.
+	
+	• O analista de riscos verifica se o recurso realmente é aplicável. Se sim, o analista de
+riscos envia um pedido de pagamento ao segurado e anota um lembrete para si próprio.
+Se o recurso não for possível, o analista de riscos encerra o cz'aso.
+	
+	• Quando o pagamento é recebido, o valor é contabilizado para a seguradora associado
+ao caso do segurado e o caso é encerrado
+	
+	• Se o segurado discordar do recurso e fizer alegações, o analista de riscos deverá
+verificar. Se o segurado estiver fundamentado, o caso é encerrado. Se as alegações do
+segurado não forem pertinentes, o caso é encaminhado para uma agência de cobrança.
+	
+	• Se o prazo para resposta do segurado for atingido e não tivermos recebido nenhuma
+justificativa ou pagamento, o caso é encaminhado para uma agência de cobrança
+também.
+
+Identifique os seguintes elementos do processo:
+
+• Nome do processo
+	- recuperação através de recursos
+
+• Objetivo(s)
+	- aperfeiçoar os seus processos visando aumentar a taxa de recuperação através de recursos.
+
+• Evento(s) inicial(is) / final(is)
+	- 
+
+• Ator(es)
+	- analista de riscos
+	- segurados
+
+• Atividade(s)
+	- 
+
+• Conector(es) (Pontos de decisão): 
+	- XOR
+
+• Entrada(s) / Saída(s)
+	Entrada:
+	- Pedido de sinistro
+	Saída:
+	- Encerramento do caso ou pagamento do sinistro

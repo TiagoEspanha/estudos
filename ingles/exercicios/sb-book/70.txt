@@ -1,0 +1,32 @@
+4
+    a
+        1 - encourage
+        2 - increase
+        3 - ban
+        4 - promote
+        5 - reduce
+        6 - protect
+
+    b
+        slow life down
+
+    c   
+        A
+            1 - Carlo petrini. Because a mcdonalds opened in a tradicional square in rome
+            2 - He thought people live to fast today and doesnt even have time to sit down and apreciate a good meal 
+            3 - Eat in local and small restaurantes, appreciate life more instead of just do things all the time  
+            4 - pretty big, eity thousands members in one hungred countries
+
+        B 
+            1 - It started by the mayor of a small city in italy
+            2 - Improve life quality
+            3 - All over the world, countries like UK, japan, australia etc
+            4 - Most of them like it, but youger people are missing the excitement of the big city
+
+    e 
+        YES
+
+
+5
+    A
+        

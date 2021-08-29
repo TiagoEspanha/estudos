@@ -1,0 +1,29 @@
+input
+  so_em_tendencia : boolean;
+  
+var 
+  candleAnteriorEhUm9_3 : Float;
+
+  candle0_mme9 : Float;                              
+  candle1_mme9 : Float;   
+begin
+  candleAnteriorEhUm9_3 := _noveTres(1, so_em_tendencia);
+  plot(0);
+  se( candleAnteriorEhUm9_3 = 1)entao
+    inicio 
+      candle0_mme9 := MediaExp(9, close[0]);
+      candle1_mme9 := MediaExp(9, close[1]);
+      se( (candle0_mme9 >= candle1_mme9) and (Maxima <= maxima[1]) ) then
+        inicio
+          PaintBar(clPurple);
+          plot(1);
+        fim
+      else
+        plot(0.5);
+
+    fim;
+
+
+
+end;
+              

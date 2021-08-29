@@ -1,0 +1,48 @@
+Input
+  n_candle(0);
+  so_em_tendencia(true);
+
+var                                          
+  mme9 : Float;
+  em_tendencia : Boolean;                              
+
+
+begin
+   if (so_em_tendencia) then
+    em_tendencia := _tendencia(9, 35, 10) = 2
+   else 
+     em_tendencia := true;
+
+   mme9 := MediaExp(9, close[n_candle]);
+
+   
+   //plot2(mme9);
+   //plot3(mme9[1]);
+   //SetPlotColor(3, clGreen);
+   
+   if ( 
+          (Fechamento[n_candle] <= Fechamento[n_candle + 2]) 
+      and (Fechamento[n_candle + 1] <= Fechamento[n_candle + 2])
+      and (Fechamento[n_candle + 1] > Minima[n_candle + 2] )
+      and (mme9 > 0) 
+      and (mme9 >= mme9[1])
+      and (mme9[1] >= mme9[2]) 
+      and (mme9[2] >= mme9[3])
+      and (em_tendencia) ) then
+        begin
+          PaintBar(clPurple);
+          plot(1);
+        end 
+   else
+     begin
+        plot(0);
+     end;
+                                               
+end;
+
+// Descrição
+// MME9 ascedente desde o ref 
+// Procuramos o Candle referencia que é o com maior fechamento
+// 2º candles seguidos com FECHAMENTO abaixo do candle 3º candle
+// 3º candle não precisa fechar abaixo do 2º candle, so do primeiro 
+// Candle 2 (1º após referencia) não pode ter a mínima menor 

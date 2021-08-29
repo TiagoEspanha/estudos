@@ -1,0 +1,23 @@
+Definam os elementos do projeto de modelagem do trabalho:
+
+Método – Sharp
+Meta-modelo – Quais diagramas e elementos? Por que?
+Notação – Qual? Por que?
+Ferramenta de modelagem – Qual? Por que?
+
+https://docs.google.com/document/d/1NRKa-PQMxWlvcQOt07rIqttFl-Mu1aeWp2ckWdzqOhk/edit
+
+-----
+
+Nome: Tiago Marques Espanha 
+	Bruno Vasconcelos Xavier
+	Rodrigo Cavote
+
+
+1) O método é o primeiro passo para construção de uma modelagem de negócio cujo objetivo se baseia no levantamento de informações do mesmo. Definindo as informações levantadas e técnicas irão ser usadas poderemos construir uma sequência (método) de passos dando início a modelagem
+
+2) Tendo definido o método o próximo passo é a escolha do meta-modelo em que teremos que pontuar os elementos que representam parte da construção do modelo, no qual podemos definir nos seguintes setores: atividades, atores, eventos, documentos, sistemas, regras de negócio, indicadores, riscos, informações e requisitos. Tendo concluído o processo de identificar os agentes responsáveis do processo podemos ter já uma noção clara e organizada dos fatores que corroboram para o sucesso do processo ou os que podemos interferir no processo. Podendo agora construir meios de prevenção aos impeditivos.
+
+3) Dando sequência ao processo de modelagem devemos agora pontuar qual notação usarem no qual devine de qual forma iremos organizar nosso processo de forma que visualmente fique clara a distribuição e fluxo do processo através da escolha de símbolos que definam a lógica do processo. Existem varias notações: diagrama de Petri, IDEF0, Aris, SPEM, EPC e BPMN… hoje em dia o EPC e BPMN são os mais utilizados.
+
+4) A ferramenta que usaremos para construção hoje em dia com o apoio da tecnologia é feita em grande parte no meio digital sendo utilizamos de programas para a construção das modelagens. A escolha de qual ferramenta utilizar irá depender de qual notação irá ser utilizada, no qual a ferramenta escolhida irá comportar a notação. Existem muitas ferramentos que suportam mais de uma notação podendo assim ser ampla a escolha de qual utilizar. As ferramentas as mais famosa são Bizagi Modeler, Heflo, BPMN.io, ARIS Express, Conslusão…. dentre outras.

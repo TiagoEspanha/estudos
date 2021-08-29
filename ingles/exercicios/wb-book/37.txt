@@ -1,0 +1,46 @@
+37.txt
+
+first: if + present simples, will + infinitive
+second: if + past simple, would + infinitive
+1
+	a
+		2	- 
+		3	- offered
+		4	- didnt 
+		5	- 
+		6	- would be a 
+		7	- 
+		8	- if we had the time
+
+	b
+		2	- will meet
+		3	- will lose
+		4	- wasnt	
+		5	- would / retire	
+		6	- get married	
+		7	- wouldnt be 	
+		8	- went out
+		9	- will learn	
+		10	- would learn	
+
+2
+
+	a
+		2	- CHIMney
+		3	- resiDENtial
+		4	- deTAched
+		5	- TErraced
+		6	- BAlcony
+		7	- gaREge or GArege
+		8	- COttage
+		9	- inHAbitant
+		10	- SUburbs
+		11	- DISHwasher
+		12	- arPARtement
+
+	b
+		2	- WOULDNT
+		3	- 
+		4	- 
+		5	- 
+

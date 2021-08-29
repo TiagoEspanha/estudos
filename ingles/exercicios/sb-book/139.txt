@@ -1,0 +1,20 @@
+5b
+    A   
+        1   - the door, the house  
+        2   - a Russian, a lawyer 
+        3   - the theatre, a month
+        4   - a beautiful, the terrace
+        5   - classical music, italian food
+        6   - the girl, the window
+        7   - home, to work
+        8   - men, womem
+        9   - dinner, bed
+        10  - a lovely face, attractive eyes
+
+    B
+        1   - the _ a 
+        2   - a _ _ 
+        3   - _ an 
+        4   - a an 
+        5   - the the _
+        6   - the a the

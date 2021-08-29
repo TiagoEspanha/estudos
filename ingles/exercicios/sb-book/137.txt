@@ -1,0 +1,28 @@
+137.txt
+
+used to 
+
+
+4c
+	a
+		1	- used to
+		2	- use to 
+		3	- usually
+		4	- didnt use 
+		5	- used to
+		6	- used to
+		7	- do YOU usually
+		8	- we went
+		9	- did 
+		10	- didnt use to wear
+
+	b
+		1	- used to live
+		2	- did u use to have
+		3	- didnt use to like
+		4	- used to be 
+		5	- did u use to work
+		6	- used to play
+		7	- used to have 
+		8	- did u use to argue 
+		9	- didnt use to be

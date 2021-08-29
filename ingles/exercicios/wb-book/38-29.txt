@@ -1,0 +1,59 @@
+38.txt
+
+3
+	a
+		2	- 	village
+		3	-	center
+		4	-	garden
+		5	-	gate
+		6	-	path
+		7	-	garage
+		8	-	armchairs
+		9	-	coffe table
+		10	-	dishwasher
+		11	-	sink
+		12	-	bathroom
+		13	-	shower
+		14	-	washbasin
+		15	-	bedroom
+
+	b
+		2	-	floor
+		3	-	steps
+		4	-	residential
+		5	-	chimney
+		6	-	terranced
+		7	-	detached
+		8	-	suburbs
+		9	-	roof
+		10	-	country
+
+
+4
+	a
+		2	-	c
+		3	-	b
+		4	-	a
+		5	-	b
+		6	-	b
+
+	c
+		2	-	extraordinary
+		3	-	giant
+		4	-	ultra-modern
+		5	-	invisible
+		6	-	minimalist
+		7	-	open-plan
+
+	MWTL
+
+		1	- pintar
+		2	- entrada
+		3	- patio
+		4	- cortina
+		5	- extraordinario
+		6	- gigante
+		7	- ideal
+		8	- sem andares
+		9	- espaçosa
+		10	- cercada

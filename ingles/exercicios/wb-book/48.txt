@@ -1,0 +1,28 @@
+3
+    A   
+        2
+        1  6 8 
+        10 14
+        3  4
+        11 15 
+        7  9 
+
+    B   
+        B 15
+        c 16
+        d 1
+        e 7
+        f 11
+        g 6
+        h 13  
+        i 2
+        j 12
+
+    C 
+        1 amount
+        2 effortlessly
+        3 curtains
+        4 run out
+        5 outfit
+
+

@@ -1,0 +1,56 @@
+36.txt
+
+4
+
+	b
+		1	
+		2	util
+		3	before
+		4	when
+		5	unless
+		6	as soon as
+		7	if
+		8	util
+
+	c
+		
+		2	will take fail	
+		3	will do / ends	
+		4	are, wont be able to
+		5	wont leave finishs
+		6	get / will call
+		7	will come go 
+		8	will / be hurry up
+		9	speak / wont know 
+		10	wont pass / dont revise
+
+MWTL
+	
+	comportamento
+	sino
+	cantina
+	efetivo
+	levemente
+	abotoar
+	punir
+	primeiro de todos
+	em segundo lugar
+	finalmente
+
+
+1		go / will go
+2		get / will be
+3		dont see/ will see
+4		doesnt come/ i will be 
+5		wait/ we will be
+6		go / we will
+7		doesnt improve, wont have
+8		dont go, will be 
+9		eat, will feel
+10		dont want, will cook
+11		will come, want
+12		will go, are
+13		will stay, get
+14		wont get, doesnt pass
+15		will buy, have
+16		will cook, go

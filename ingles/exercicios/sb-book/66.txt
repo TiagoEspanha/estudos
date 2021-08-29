@@ -1,0 +1,57 @@
+66.txt
+
+Grammar 
+
+	a
+		1	will do	
+		2	drank
+		3	are
+		4	would change
+		5	arrives
+
+	b
+		1	c
+		2	b
+		3	c
+		4	a
+		5	c
+
+Vocabulary
+
+	a
+		1	village - not a kind of house
+		2	fridge 	- does not clean anything
+		3	uniform - not a kind of school
+		4	exam 	- not a verb 
+		5	friendship - not a kind of RELATIONSHIP
+
+	b
+		1	subjects
+		2	terms
+		3	private
+		4	professor
+		5	suburby
+		6	chamine
+		7	roof
+		8	gate
+
+	c
+		1	about
+		2	in with
+		3	in 
+		4	on
+		5	at
+		6	in
+
+Pronunciation
+	a
+		1	student
+		2	
+		3
+		4
+		5
+
+	b
+
+
+

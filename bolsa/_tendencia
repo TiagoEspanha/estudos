@@ -1,0 +1,30 @@
+Parametro
+  Mediamovel(9);
+  Periodos(35);
+  PeriodoRetracao(10);
+
+var
+  i : Inteiro;
+  x,y : Inteiro; //x alta, y baix
+  mm: Real ;
+
+Inicio
+  mm := Mediaexp(mediamovel, fechamento);
+  x:=0;
+  y:=0;
+  Para i:= 0 ate periodos - 1 faca
+    Inicio
+      Se (mm[1] > mm [i+1]) entao
+        x := x+1
+      Senao Se (mm[i] < mm[i+1]) entao
+        y := y + 1;
+    fim;
+  
+  Se (x >= (Periodos - PeriodoRetracao)) entao 
+    inicio paintbar(clverde); plot(2); fim 
+  
+  Senao Se (y >= (Periodos - PeriodoRetracao)) entao 
+    inicio paintbar(clvermelho); plot(1); fim
+
+  Senao paintbar(clyellow);
+Fim;            

@@ -1,0 +1,169 @@
+-- questao 1
+
+drop table eventos;
+drop table pedidos;
+
+create table pedidos (
+	id serial not null primary key, 
+	estado varchar(255)
+);
+
+create table eventos (
+	id serial not null PRIMARY KEY,
+	nome varchar(255),
+	pedido_id int,
+	CONSTRAINT fk_pedido FOREIGN KEY(pedido_id) REFERENCES pedidos(id)
+);
+
+create or replace function validar_evento(estado text, evento text) returns text
+LANGUAGE sql AS
+$$
+	SELECT CASE estado
+		when 'esperando_aceitacao' THEN
+			case evento
+				when 'restaurante_aceita' then 'aceito'
+				when 'restaurante_cancela' then 'cancelado'
+				else 'erro'
+			end 
+		when 'aceito' THEN
+			case evento 
+				when 'restaurante_envia' then 'enviado'
+				else 'erro'
+			end 
+		when 'enviado' THEN
+			case evento 
+				when 'cliente_paga' then 'finalizado'
+				when 'cliente_cancela' then 'cancelado'
+				else 'erro'
+			end
+		ELSE 'error'
+	END
+$$;
+
+
+create or replace function func_pedido_evento() returns trigger LANGUAGE plpgsql AS
+	$$
+	declare estado_atual varchar;
+	declare novo_estado varchar;
+	begin 
+		select estado into estado_atual from pedidos where id = new.pedido_id;
+		novo_estado := validar_evento(estado_atual, new.nome);
+		
+		if novo_estado = 'erro' then
+			RAISE EXCEPTION 'Evento invalido';
+		END IF;
+	
+		update pedidos set estado = novo_estado where id = new.pedido_id;
+		return new;
+	end
+	$$;
+
+
+create trigger trg_pedido_evento after insert on eventos
+FOR EACH row
+EXECUTE procedure func_pedido_evento();
+		
+-- fluxo cliente pede e paga
+insert into pedidos (estado) values ('esperando_aceitacao');
+insert into eventos (nome, pedido_id) values ('restaurante_aceita', 1);
+insert into eventos (nome, pedido_id) values ('restaurante_envia', 1);
+insert into eventos (nome, pedido_id) values ('cliente_paga', 1);
+
+-- fluxo cliente pede e restaurante cancela
+insert into pedidos (estado) values ('esperando_aceitacao');
+insert into eventos (nome, pedido_id) values ('restaurante_cancela', 2);
+
+-- fluxo cliente pede, restaurante aceita, mas cliente cancela em vez de pagar
+insert into pedidos (estado) values ('esperando_aceitacao');
+insert into eventos (nome, pedido_id) values ('restaurante_aceita', 3);
+insert into eventos (nome, pedido_id) values ('restaurante_envia', 3);
+insert into eventos (nome, pedido_id) values ('cliente_cancela', 3);
+
+
+
+------------------------------------------------
+
+
+--Questao 2
+
+drop table numeros_mensagens;
+drop table mensagens;
+
+create table numeros_mensagens(
+	numero int
+);
+
+create table mensagens(
+	id int,
+	texto varchar(255)
+);
+
+create or replace function pegar_numero() returns int LANGUAGE plpgsql AS
+$$
+	declare novo_numero int;
+	begin
+		select numero from numeros_mensagens for update into novo_numero;
+		update numeros_mensagens set numero = novo_numero + 1 where numero = novo_numero;
+		return novo_numero;
+	end;
+$$
+
+insert into numeros_mensagens (numero) values (1);
+insert into mensagens (id, texto) values (pegar_numero(), '1');
+insert into mensagens (id, texto) values (pegar_numero(), '2');
+insert into mensagens (id, texto) values (pegar_numero(), '3');
+
+---------------------------------------------------------------
+
+
+questão 3
+
+SGBD - postgres
+Antes de falar dos níveis de isolamento, precisamos detalhar os problemas possiveis com concorrencia:
+	Dirty Read: Ocorre quando é permitido ler informações que não foram commitadas ainda.
+
+	Nonrepeatable reads: Em alguns casos não é um problema, por isso o Postgres não bloqueia. Quando uma transaction rele informações que já foram lidas na transaction, e ela foi modificada por outra transaction que foi commitada nesse meio tempo.
+	
+	Phantom Reads: A transaction executa novamente um comando que modifica uma tabela e percebe que o resultado mudou, pois foi modificado por outra transaction que foi commitada nesse meio tempo.
+
+níveis de isolamento:
+	
+	Read Uncommited: Não existe no postgres, mas está especificado no SQL. Permite todos os problemas. 
+
+	Read Commited: Nível padrao do postgres. Podendo ocorrer os problemas Nonrepeatable reads e Phantom Reads
+	
+	Repeatable Read: Não deixa ler dados apagados alterados em uma transação concorrente, mas permite leitura depois dela ser commitada, sendo assim podendo ocorrer o problema Phantom Reads.
+
+	Serializable: Nível mais isolado, nao permitindo nenhum dos problemas de concorrencia citados acima.
+
+	No modo de isolamento padrão do SGBD escolhido duas leituras do mesmo registro dentro uma única transação podem retornar posições
+diferentes desse registro?
+
+	Sim, pois o SELECT vê uma 'foto' do banco do momento que ele comeca a executar. Se alguma outra transaction que modifica a tabela alvo do select acabar de commitar entre o comeco de um query e a outra, vai ser diferente.
+
+
+referencias: 
+https://www.postgresql.org/docs/current/transaction-iso.html
+
+----------------------------------------------------------------
+
+-- questao 4
+DROP table IF exists alunos CASCADE;
+
+create table alunos(
+	id serial primary key,
+	nome varchar(255),
+	matricula varchar(255),
+	nota int
+)
+
+create view viewAlunosSendoVistosPorAlunos (nome) as select nome from alunos
+
+CREATE ROLE aluno;
+
+GRANT SELECT ON viewAlunosSendoVistosPorAlunos TO aluno;
+
+insert into alunos (nome, matricula, nota) values ('tiago espanha', '1111', 10);
+insert into alunos (nome, matricula, nota) values ('mateus espanha', '2222', 5);
+
+

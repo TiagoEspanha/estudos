@@ -1,0 +1,15 @@
+var 
+  eh93 : Float;
+  eh93gatinho : Float;
+  eh93SoEmTendencia : Boolean;
+
+begin
+
+    //9.3
+    eh93SoEmTendencia := true;
+    eh93 := _noveTres(0, eh93SoEmTendencia);
+    eh93gatinho := _nove_tres_abaixar_gatilho(eh93SoEmTendencia);
+    if(eh93 = 1) then PaintBar(clPurple);
+    if(eh93gatinho = 1) then PaintBar(clPurple);
+     
+end;

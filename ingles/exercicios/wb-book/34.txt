@@ -1,0 +1,22 @@
+1	- 
+2	- exam
+3	- 
+4	- 
+5	- 
+6	- 
+7 	- information
+8	- term
+9	- discipline 
+10	- liecture
+11	- fail
+12	- grade
+13	- bording
+14	- teacher
+15	- chemestry
+16	- secondary
+17	- cheat
+18	- nurcery
+19	- time table
+20	- do
+21	- 
+22	- private

@@ -1,0 +1,54 @@
+2
+    b
+        1 - cough
+        2 - naughty
+        3 - draught
+        4 - doughnut
+        5 - rougth
+
+    c
+
+
+3
+    a
+        2 - imagination
+        3 - information
+        4 - surviv
+        5 - prediction
+        6 - argument
+        7 - revision
+        8 - propose 
+
+    B
+        2 - happiness 
+        3 - similarity
+        4 - possibility
+        5 - minority
+        6 - ability ???
+
+
+4
+    a - 3
+
+    c   
+        1 - because most people have a rushy lifestyle with a lot of stree, which dificults a more healthy life    
+        2 - no
+        3 - depressed and overweight
+        4 - encouraging us to look for quality ingredients and take pleasure in eating
+        5 - 8 weeks
+        6 - no
+        7 - we will have a healthy body
+
+
+MORE WORDS TO LEARN
+
+balanceado
+sabor
+global
+organica
+tragico 
+mirar, almejar
+encorajar
+aumentar
+diminuir
+proteger

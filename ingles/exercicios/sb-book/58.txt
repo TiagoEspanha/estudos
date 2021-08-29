@@ -1,0 +1,50 @@
+58.txt
+
+3
+	a
+		living room. coffe table, sofa, 
+
+
+	c
+		niteroi, rj
+		nice view
+		a lot of beggars
+		it has a pool table
+		i would add another room 
+
+4
+	a
+		a - 4
+		b - 1
+		c - 3
+		d - 2
+	b
+		a	- 2
+		b	- 3
+		c	- 1
+		d	- 4
+	c
+		a	-	italy
+		b	-	big house on the country
+		c	-	mayb a nice garden and a nice view
+
+
+5
+
+	a
+		yes, a famous layer, at botafogo
+
+	b
+
+	c
+		1	-	dresser
+		2	-	glass 
+		3	-	entrance
+		4	-	gallery
+		5	-	upstairs
+		6	-	airy
+		7	-	shutters
+		8	-	patio
+
+	d
+		i dont know haha, yes.

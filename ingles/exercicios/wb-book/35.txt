@@ -1,0 +1,28 @@
+3
+
+	a
+		1
+		2 	it is a short for weblog
+		3 	It is a online diary
+		4	Personal online studies
+		5	What i know is
+		6	anyone
+		7	because the information may not be accurate
+		8	The most known wiki site
+
+	b
+		1	
+		2
+		3
+		4
+		5
+
+4
+	
+	a
+		1	d
+		2	f
+		3	e
+		4	a	
+		5	c
+		6	b

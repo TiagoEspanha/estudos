@@ -1,0 +1,44 @@
+43.txt
+
+1
+	2	-	shall we go out	
+	3	- 	
+	4	-	what film should we see
+	5	-	
+	6	-	how about going to
+	7	-	
+	8	-	lets go
+
+
+
+
+	1	f
+	2	t
+	3	f
+	4	t
+	5	f
+	6	t
+	7	t
+
+
+
+2
+	2	shall we leave
+	3	looks
+	4	could do me 
+	5	arent you
+	6	hang on
+
+3
+	a
+		2 	red hot chilli peppers	
+		3	J lo
+		4	Elton john
+		5	Houston
+		6	Coldplay
+		7	Van halen
+		8	Jane addction
+
+	b
+
+		kettle - chaleira

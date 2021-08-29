@@ -1,0 +1,6 @@
+Definam os elementos do projeto de modelagem do trabalho:
+
+Método – Sharp
+Meta-modelo – Quais diagramas e elementos? Por que?
+Notação – Qual? Por que?
+Ferramenta de modelagem – Qual? Por que?
