@@ -1,0 +1,43 @@
+1
+    a 
+        1 - A - librarian
+        2 - B - plumber
+    
+    B
+        1   - 
+        2   - experience
+        3   - training course
+        4   - working hours
+        5   - self-employed
+        6   - retire
+        7   - resigned
+        8   - temporary - permanent
+        9   - part time - full time
+        10  - qualifications
+
+2
+    1 - for
+    2 - as
+    3 - in of 
+    4 - in
+    5 - for
+    6 - at
+    7 - in 
+
+3
+    er 
+        teacher
+        developer 
+    or 
+        professor
+        doctor
+    ist
+        machinist
+        biologist
+    ian
+        magician
+
+    other
+        cameraman
+        president
+        

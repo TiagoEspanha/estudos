@@ -1,0 +1,106 @@
+CREATE (Mauro:Pessoa {
+    nome:'mauro', 
+    nascimento:1980, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'Masculino', 
+    religião: 'catolico', 
+    estadoCivil: 'solteiro'
+})
+CREATE (Daniel:Pessoa {nome:'daniel',
+    nascimento:1991, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'Masculino', 
+    religião: ' catolico',
+    estadoCivil: 'solteiro'})
+CREATE (Leda:Pessoa {nome:'leda',
+    nascimento:2002, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'F', 
+    religião: 'catolico',
+    estadoCivil: 'solteiro'})
+CREATE (Erika:Pessoa {nome:'erika',
+    nascimento:2005, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'F', 
+    religião: 'catolico',
+    estadoCivil: 'solteiro'})
+CREATE (Jose:Pessoa {nome:'jose',
+    nascimento:1988, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'Masculino', 
+    religião: 'cristão',
+    estadoCivil: 'solteiro'})
+CREATE (Aline:Pessoa {nome:'aline',
+    nascimento:1975, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'F', 
+    religião: 'cristão',
+  estadoCivil: 'solteiro'})
+CREATE (Edilson:Pessoa {nome:'edilson',
+    nascimento:1950, 
+    pais: "BR",
+    cidade: "Niteroi",
+    sexo: 'Masculino',
+    religião: 'cristão',
+    estadoCivil: 'solteiro'})
+
+MERGE (Mauro)-[:EH_AMIGO]->(Daniel)
+MERGE (Mauro)-[:EH_AMIGO]->(Leda)
+MERGE (Mauro)-[:EH_AMIGO]->(Erika)
+MERGE (Mauro)-[:EH_AMIGO]->(Aline)
+MERGE (Mauro)-[:EH_AMIGO]->(Edilson)
+MERGE (Leda)-[:EH_AMIGO]->(Mauro)
+MERGE (Leda)-[:EH_AMIGO]->(Erika)
+MERGE (Leda)-[:EH_AMIGO]->(Aline)
+MERGE (Erika)-[:EH_AMIGO]->(Mauro)
+MERGE (Erika)-[:EH_AMIGO]->(Leda)
+MERGE (Erika)-[:EH_AMIGO]->(Aline)
+MERGE (Daniel)-[:EH_AMIGO]->(Mauro)
+MERGE (Daniel)-[:EH_AMIGO]->(Edilson)
+MERGE (Daniel)-[:EH_AMIGO]->(Aline)
+MERGE (Edilson)-[:EH_AMIGO]->(Mauro)
+MERGE (Edilson)-[:EH_AMIGO]->(Leda)
+MERGE (Edilson)-[:EH_AMIGO]->(Daniel)
+MERGE (Aline)-[:EH_AMIGO]->(Daniel)
+MERGE (Aline)-[:EH_AMIGO]->(Mauro)
+MERGE (Aline)-[:EH_AMIGO]->(Erika)
+MERGE (Aline)-[:EH_AMIGO]->(Jose)
+MERGE (Jose)-[:EH_AMIGO]->(Aline);
+
+MATCH (m:Pessoa {nome:'mauro'}),(d:Pessoa {nome:'daniel'}), (l:Pessoa {nome:'leda'}), (er:Pessoa {nome:'erika'}), (a:Pessoa {nome:'aline'}), (ed:Pessoa {nome:'edilson'})
+MERGE (m)-[:ENVIOU_MENSAGEM {mensagem:'Bom dia' }]->(d)
+MERGE (m)-[:ENVIOU_MENSAGEM {mensagem:'Bom dia' }]->(l)
+MERGE (m)-[:ENVIOU_MENSAGEM {mensagem:'Bom dia' }]->(er)
+MERGE (m)-[:ENVIOU_MENSAGEM {mensagem:'Bom dia' }]->(a)
+MERGE (m)-[:ENVIOU_MENSAGEM {mensagem:'Bom dia' }]->(ed);
+
+
+CREATE (MauroFoto:Foto {url:'mauroSorrindo.jpeg'});
+MATCH (m:Pessoa {nome:'mauro'}), (mFoto:Foto {url:'mauroSorrindo.jpeg'})
+CREATE (m)-[:POSTOU]->(mFoto);
+
+
+
+MATCH (mFoto:Foto {url:'mauroSorrindo.jpeg'}),(d:Pessoa {nome:'daniel'}), (l:Pessoa {nome:'leda'}), (er:Pessoa {nome:'erika'}), (a:Pessoa {nome:'aline'}), (ed:Pessoa {nome:'edilson'})
+MERGE (d)-[:COMENTOU {comentario:'Shape maneiro!' }]->(mFoto)
+MERGE (l)-[:COMENTOU {comentario:'Belo sorriso' }]->(mFoto)
+MERGE (er)-[:COMENTOU {comentario:'Chama dm' }]->(mFoto)
+MERGE (a)-[:COMENTOU {comentario:'Lindu!' }]->(mFoto)
+MERGE (ed)-[:COMENTOU {comentario:'Feio dms kkkk' }]->(mFoto);
+  
+
+CREATE (AlinePost:Post { post:'A pedra' });
+
+MATCH (aPost:Post {post:'A pedra'}), (a:Pessoa {nome:'aline'}), (d:Pessoa {nome:'daniel'}), (m:Pessoa {nome:'mauro'}), (er:Pessoa {nome:'erika'}), (j:Pessoa {nome:'jose'})
+MERGE (a)-[:POSTOU]->(aPost)
+MERGE (d)-[:COMENTOU {comentario:'Entendi nada' }]->(aPost)
+MERGE (m)-[:COMENTOU {comentario: 'bonito!' }]->(aPost)
+MERGE (er)-[:COMENTOU {comentario: 'Faz mais!' }]->(aPost)
+MERGE (j)-[:COMENTOU {comentario:'?????' }]->(aPost)
+MERGE (a)-[:ENVIOU_MENSAGEM {mensagem:'Que mensagem chata' }]->(j);

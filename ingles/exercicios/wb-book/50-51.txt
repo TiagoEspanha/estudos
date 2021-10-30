@@ -1,0 +1,45 @@
+1
+    A
+        B   - Responsabilities 
+        C   - Working hours
+        D   - Qualifications 
+        E   - Training 
+        F   - Oportunities 
+        G   - Salary 
+
+    B
+        2   - full time 
+        3   - hours
+        4   - overtime
+        5   - experience
+        6   - part time 
+        7   - multionational
+        8   - promoted 
+        9   - earn
+        10  - apply
+        11  - send in
+        12  - CV
+
+    C 
+        2   - in
+        3   - at 
+        4   - 
+        5   - temporary
+        6   - resign
+        7   - responsable
+        8   - retire
+
+2
+    a
+        2
+
+    B
+        2   - t
+        3   - t
+        4   - f 
+        5   - t 
+        6   - t
+        7   - t 
+        8   - t 
+    
+    3

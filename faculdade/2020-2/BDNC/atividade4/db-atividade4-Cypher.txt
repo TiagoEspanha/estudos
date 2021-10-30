@@ -1,0 +1,14 @@
+MATCH (n:Person) 
+MATCH  (n)-[:FRIENDS_WITH*2]-(m) 
+WHERE n.nome = "Jose"and NOT (n)-[:FRIENDS_WITH]-(m) and not m.nome = "Jose"
+RETURN m;
+
+MATCH (n:Person) 
+MATCH (m:Person)
+MATCH (o:Photo)
+MATCH (p:Person)
+MATCH (n)-[:FRIENDS_WITH]-(m)
+MATCH (m)-[:COMMENT]-(o) 
+MATCH (o)-[:POST]-(p)
+WHERE n.nome = "Jose" and p.nome = 'Mauro'
+RETURN m;

@@ -1,0 +1,76 @@
+CREATE (Mauro:Person {nome:'Mauro', nascimento:1990, pais: 'Brasil', cidade: 'Niteroi', sexo: 'M', religião: ' cristianismo', estadoCivil: 'solteiro'})
+CREATE (Daniel:Person {nome:'Daniel', nascimento:1991, pais: 'Brasil', cidade: 'Rio de Janeiro', sexo: 'M', religião: ' cristianismo', estadoCivil: 'solteiro'})
+CREATE (Leda:Person {nome:'Leda', nascimento:1992, pais: 'Brasil', cidade: 'Niteroi', sexo: 'F', religião: 'agnosticismo', estadoCivil: 'solteiro'})
+CREATE (Erika:Person {nome:'Erika', nascimento:1993, pais: 'Brasil', cidade: 'Volta Redonda', sexo: 'F', religião: 'agnosticismo', estadoCivil: 'solteiro'})
+CREATE (Jose:Person {nome:'Jose', nascimento:1994, pais: 'Canada', cidade: 'Toronto', sexo: 'M', religião: 'budista', estadoCivil: 'casado'})
+CREATE (Aline:Person {nome:'Aline', nascimento:1995, pais: 'Canada', cidade: 'Toronto', sexo: 'F', religião: 'budista', estadoCivil: 'casado'})
+CREATE (Edilson:Person {nome:'Edilson', nascimento:1966, pais: 'Brasil', cidade: 'Sao Paulo', sexo: 'M', religião: 'islamismo,', estadoCivil: 'solteiro'})
+
+MERGE (Mauro)-[:FRIENDS_WITH]->(Daniel)
+MERGE (Mauro)-[:FRIENDS_WITH]->(Leda)
+MERGE (Mauro)-[:FRIENDS_WITH]->(Erika)
+MERGE (Mauro)-[:FRIENDS_WITH]->(Aline)
+MERGE (Mauro)-[:FRIENDS_WITH]->(Edilson)
+MERGE (Leda)-[:FRIENDS_WITH]->(Mauro)
+MERGE (Leda)-[:FRIENDS_WITH]->(Erika)
+MERGE (Leda)-[:FRIENDS_WITH]->(Aline)
+MERGE (Erika)-[:FRIENDS_WITH]->(Mauro)
+MERGE (Erika)-[:FRIENDS_WITH]->(Leda)
+MERGE (Erika)-[:FRIENDS_WITH]->(Aline)
+MERGE (Daniel)-[:FRIENDS_WITH]->(Mauro)
+MERGE (Daniel)-[:FRIENDS_WITH]->(Edilson)
+MERGE (Daniel)-[:FRIENDS_WITH]->(Aline)
+MERGE (Edilson)-[:FRIENDS_WITH]->(Mauro)
+MERGE (Edilson)-[:FRIENDS_WITH]->(Leda)
+MERGE (Edilson)-[:FRIENDS_WITH]->(Daniel)
+MERGE (Aline)-[:FRIENDS_WITH]->(Daniel)
+MERGE (Aline)-[:FRIENDS_WITH]->(Mauro)
+MERGE (Aline)-[:FRIENDS_WITH]->(Erika)
+MERGE (Aline)-[:FRIENDS_WITH]->(Jose)
+MERGE (Jose)-[:FRIENDS_WITH]->(Aline)
+
+
+CREATE (MauroDirectMessageToDaniel:DirectMessage {content:'Bom dia' })
+MERGE (Mauro)-[:SEND_MESSAGE]->(MauroDirectMessageToDaniel)
+MERGE (MauroDirectMessageToDaniel)-[:TO]->(Daniel)
+
+CREATE (MauroDirectMessageToLeda:DirectMessage {content:'Bom dia' })
+MERGE (Mauro)-[:SEND_MESSAGE]->(MauroDirectMessageToLeda)
+MERGE (MauroDirectMessageToLeda)-[:TO]->(Leda)
+
+CREATE (MauroDirectMessageToErika:DirectMessage {content:'Bom dia' })
+MERGE (Mauro)-[:SEND_MESSAGE]->(MauroDirectMessageToErika)
+MERGE (MauroDirectMessageToErika)-[:TO]->(Erika)
+
+CREATE (MauroDirectMessageToAline:DirectMessage {content:'Bom dia' })
+MERGE (Mauro)-[:SEND_MESSAGE]->(MauroDirectMessageToAline)
+MERGE (MauroDirectMessageToAline)-[:TO]->(Aline)
+
+CREATE (MauroDirectMessageToEdilson:DirectMessage {content:'Bom dia' })
+MERGE (Mauro)-[:SEND_MESSAGE]->(MauroDirectMessageToEdilson)
+MERGE (MauroDirectMessageToEdilson)-[:TO]->(Edilson)
+
+
+CREATE (MauroPhoto:Photo {url:'public/profile.png', description: 'Mauro profile picture', isProfile: 'true'})
+
+MERGE (Mauro)-[:POST]->(MauroPhoto)
+MERGE (Daniel)-[:COMMENT {content: 'Bela foto1'}]->(MauroPhoto)
+MERGE (Leda)-[:COMMENT {content: 'Bela foto2'}]->(MauroPhoto)
+MERGE (Erika)-[:COMMENT {content: 'Bela foto3'}]->(MauroPhoto)
+MERGE (Aline)-[:COMMENT {content: 'Bela foto4'}]->(MauroPhoto)
+MERGE (Edilson)-[:COMMENT {content: 'Bela foto5'}]->(MauroPhoto)
+
+  
+CREATE (AlinePost:Post {content:'A Pedra' })
+
+MERGE (Daniel)-[:COMMENT {content: 'Belo texto 1'}]->(MauroPhoto)
+MERGE (Mauro)-[:COMMENT {content: 'Belo texto 2'}]->(MauroPhoto)
+MERGE (Erika)-[:COMMENT {content: 'Belo texto 3'}]->(MauroPhoto)
+MERGE (Jose)-[:COMMENT {content: 'Belo texto 4'}]->(MauroPhoto)
+
+
+CREATE (AlineDirectMessageToJose:DirectMessage {content:'Que mensagem chata' })
+MERGE (Aline)-[:SEND_MESSAGE]->(AlineDirectMessageToJose)
+MERGE (AlineDirectMessageToJose)-[:TO]->(Jose)
+
+

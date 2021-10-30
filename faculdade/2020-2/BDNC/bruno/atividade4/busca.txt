@@ -1,0 +1,11 @@
+MATCH (p1)-[:EH_AMIGO*2]-(p2) 
+WHERE p1.nome = "jose" 
+and NOT (p1)-[:EH_AMIGO]-(p2) AND NOT p2.nome = "jose"
+RETURN p2;
+
+MATCH (p1)-[:EH_AMIGO]-(p2)
+MATCH (p2)-[:COMENTOU]-(f) 
+MATCH (f)-[:POSTOU]-(p3)
+WHERE p1.nome = "jose" 
+AND p3.nome = 'mauro'
+RETURN p2;
