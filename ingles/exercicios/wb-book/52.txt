@@ -1,0 +1,48 @@
+4
+    a
+        2 - c
+        3 - g
+        4 - h
+        5 - d
+        6 - e
+        7 - a
+        8 - b
+
+    b
+        2 - not going (arrependido)
+        3 - to train
+        4 - sending (memoria)
+        5 - being 
+        6 - to give
+        7 - typing
+        8 - to include
+
+    c
+        2 -   
+        3 - 
+        4 - interviewing
+        5 - 
+        6 - styding
+        7 - to move
+        8 - Working
+
+
+MWTL
+    participante
+    industria
+    juiz
+    marketing
+    politico
+    vendas
+    serie de tv
+    fingir
+    arrepender
+    ver/parecer
+
+CYR
+    wont
+    were 
+    use
+    no 
+    an 
+    whatching

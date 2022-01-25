@@ -1,0 +1,45 @@
+a
+    1 - c
+    2 - c
+    3 - a
+    4 - b
+    5 - c
+
+b
+    1 - 
+    2 - 
+    3 - 
+    4 - 
+    5 - 
+
+
+Vocabulary
+
+    a
+        1 - government
+        2 - reacttion
+        3 - happines
+        4 - possibility
+        5 - qualification
+
+    b
+        1 - for
+        2 - about
+        3 - with
+        4 - at
+        5 - at 
+        6 - as 
+
+    c
+        1 - overtime
+        2 - off
+        3 - sad
+        4 - promoted
+        5 - sallary
+        6 - contract
+        7 - apply
+        8 - self employeed
+        9 - resign 
+
+Pronuciation
+    

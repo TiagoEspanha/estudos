@@ -1,0 +1,45 @@
+1
+    a
+        1   - would
+        2   - told me 
+        3   - she buys
+        4   - it was 
+        5   - hadnt bought
+        6   - whether
+        7   - had to go
+        8   - worked
+        9   - told them might
+        10  - if i could
+
+     b
+        1   - 
+        2   - that i didnt like shopping in the sales
+        3   - she asked me how much i had payed for the bag
+        4   - they said that they would buy their plane tickets on the internet 
+        5   - the shop assistant asked me if i had the receipt 
+        6   - i asked the man where the toilets were
+
+
+2
+    a   
+        1   - 
+        2   - customers
+        3   - receipt
+        4   - trolley
+        5   - discount
+        6   - till 
+        7   - manager
+        8   - refund
+        9   - departament store
+        10  - sales
+        11  - bargain
+        12  - complain
+        13  - queue
+        14  - shop assistentg
+
+    b
+        1   - news tend
+        2   - butchets
+        3   - chemist or pharmarc
+        4   - departament stopre
+        5   - shopping center

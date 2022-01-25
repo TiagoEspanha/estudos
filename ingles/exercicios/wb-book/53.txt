@@ -1,0 +1,35 @@
+1
+    2 opnion
+    3 think
+    4 agree 
+    5 agree
+    6 Personnaly
+    7 sure
+    8 with
+    9 thats
+
+2
+    2 unfair
+    3 turn 
+    4 what is 
+    5 kidding 
+    6 deal
+    7 lets
+
+3
+    a
+        1 no, you get one when you buy a ticket 
+        2 the Mona lisa
+        3 in the morning, when you have plenty of energy to spare 
+        4 In one of the reasonably priced cafés 
+        5 relaxing finding surprises without looking at the map 
+        6 Yes
+        7 No, you can borrow it for free if you leave your credit card or passport as ensurance 
+        8 the one shop that you get it from
+
+    b
+        1   
+        2   
+        3   
+        4   
+        5   
